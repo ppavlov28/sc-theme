@@ -1,0 +1,16 @@
+<nav class="container">
+    <ul id="menu-main-menu" class="main-nav"><li id="menu-item-85" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-10 current_page_item menu-item-85"><a href="http://salmoncontent.dev/">Home</a></li>
+<li id="menu-item-83" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-83"><a href="http://salmoncontent.dev/catalog/">Catalog</a>
+<ul class="sub-menu">
+	<li id="menu-item-89" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-89"><a href="http://salmoncontent.dev/category/genre/tvnovelle/">Теленовеллы</a></li>
+	<li id="menu-item-88" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-88"><a href="http://salmoncontent.dev/category/genre/tvshows/">Сериалы</a></li>
+	<li id="menu-item-87" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-87"><a href="http://salmoncontent.dev/category/genre/child/">Детские программы</a></li>
+	<li id="menu-item-86" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-86"><a href="http://salmoncontent.dev/category/genre/detectives/">Детективы</a></li>
+</ul>
+</li>
+<li id="menu-item-82" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-82"><a href="http://salmoncontent.dev/contacts/">Contacts</a></li>
+<li id="menu-item-84" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84"><a href="http://salmoncontent.dev/katalog/">About Us</a></li>
+</ul>
+
+
+</nav>
