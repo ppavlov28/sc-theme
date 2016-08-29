@@ -45,28 +45,6 @@
 		);
 	}
 	?>
-<!--
-		<ul>
-			<li class="active">
-				<a href="">Home</a>
-			</li>
-			<li>
-				<a href="">About Us</a>
-			</li>
-			<li class="drop-menu">
-				<a href="">Catalog</a>
-				<ul class="submenu">
-					<li><a href="">Item 1 vbgf</a></li>
-					<li><a href="">Item 2</a></li>
-					<li><a href="">Item 3</a></li>
-					<li><a href="">Item 4</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="">Contacts</a>
-			</li>
-		</ul>
--->
 </nav>
 
 
