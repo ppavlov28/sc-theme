@@ -38,7 +38,7 @@ a:active {
 }
 /* Header */
 .header-main {
-  background-color: gainsboro;
+  background-color: cornflowerblue;
 }
 .header-logo {
   float: left;
@@ -56,7 +56,7 @@ a:active {
   min-height: 350px;
   font-size: 0;
   background-color: #ffffff;
-  background: #ffffff url('img/slider_placeholder.jpg') right center no-repeat;
+//  background: #ffffff url('img/slider_placeholder.jpg') right center no-repeat;
   background-size: cover;
 }
 .slider-content img {
@@ -247,7 +247,7 @@ a:active {
   min-height: 238px;
   font-size: 0;
   line-height: 1;
-  background: #ffffff url('../img/catalog_poster_cat.jpg') center center no-repeat;
+//  background: #ffffff url('../img/catalog_poster_cat.jpg') center center no-repeat;
   background-size: cover;
 }
 .catalog-content {
