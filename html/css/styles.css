@@ -24,6 +24,13 @@ a:hover,
 a:active {
   color: gray;
 }
+h1,
+h2,
+h3,
+h4 {
+  color: #bcd0e5;
+  font-weight: 300;
+}
 .clearfix::after {
   content: '';
   display: table;
@@ -38,7 +45,7 @@ a:active {
 }
 /* Header */
 .header-main {
-  background-color: gainsboro;
+  background-color: #244e81;
 }
 .header-logo {
   float: left;
@@ -48,15 +55,15 @@ a:active {
 }
 .header-title {
   float: right;
-  padding: 25px 10px 10px;
-  font-size: 21px;
+  padding: 0 10px;
+  font-weight: bold;
 }
 /* Slider */
 .slider-content {
   min-height: 350px;
   font-size: 0;
-  background-color: #ffffff;
-  background: #ffffff url('img/slider_placeholder.jpg') right center no-repeat;
+  background-color: #9fe8ee;
+  background: #9fe8ee url('img/slider_placeholder.jpg') right center no-repeat;
   background-size: cover;
 }
 .slider-content img {
@@ -65,7 +72,7 @@ a:active {
 }
 /* Main Navigation */
 .main-nav {
-  background-color: gainsboro;
+  background-color: #244e81;
 }
 #menu-top-menu {
   margin: 0;
@@ -73,34 +80,33 @@ a:active {
   list-style: none;
   font-size: 0;
 }
+#menu-top-menu a {
+  color: #bcd0e5;
+}
 #menu-top-menu:hover li.active a {
-  background-color: gainsboro;
+  background-color: #244e81;
 }
 #menu-top-menu:hover li.active a:hover {
-  color: #fff;
-  background-color: darkgray;
+  background-color: #19868f;
 }
 #menu-top-menu:hover li.active:hover a {
-  color: #fff;
-  background-color: darkgray;
+  background-color: #19868f;
 }
 #menu-top-menu:hover li.active > .sub-menu a {
-  color: #000;
   background-color: #fff;
 }
 #menu-top-menu:hover li.active > .sub-menu a:hover {
-  color: #fff;
-  background-color: darkgray;
+  background-color: #19868f;
 }
 #menu-top-menu li {
   display: inline-block;
   position: relative;
 }
 #menu-top-menu li.active a {
-  background-color: darkgray;
+  background-color: #19868f;
 }
 #menu-top-menu li.menu-item-has-children:hover {
-  background-color: darkgray;
+  background-color: #19868f;
 }
 #menu-top-menu li.menu-item-has-children:hover > .sub-menu {
   opacity: 1;
@@ -114,7 +120,7 @@ a:active {
   height: 0;
   border-width: 7px;
   border-style: solid;
-  border-color: #fff;
+  border-color: #bcd0e5;
   border-left-color: transparent;
   border-right-color: transparent;
   border-bottom-style: none;
@@ -128,14 +134,14 @@ a:active {
   height: 0;
   border-width: 7px;
   border-style: solid;
-  border-color: #000;
+  border-color: #bcd0e5;
   border-left-color: transparent;
   border-right-color: transparent;
   border-bottom-style: none;
 }
 #menu-top-menu li > .sub-menu {
   position: absolute;
-  width: 125%;
+  width: 140%;
   left: -99999px;
   margin: 0;
   padding: 0;
@@ -146,15 +152,18 @@ a:active {
   display: block;
   width: 100%;
 }
+#menu-top-menu li > .sub-menu li:first-child a {
+  border-top: 1px solid #bcd0e5;
+}
 #menu-top-menu li > .sub-menu a {
   display: block;
   width: auto;
   padding: 10px 20px;
-  background-color: #fff;
-  border-bottom: 1px solid darkgray;
+  background-color: #244e81;
+  border-bottom: 1px solid #bcd0e5;
 }
 #menu-top-menu li > .sub-menu a:hover {
-  background-color: darkgray;
+  background-color: #19868f;
 }
 #menu-top-menu a {
   display: inline-block;
@@ -163,11 +172,7 @@ a:active {
   font-size: 18px;
 }
 #menu-top-menu a:hover {
-  color: #fff;
-  background-color: darkgray;
-}
-#menu-top-menu a:active {
-  color: #fff;
+  background-color: #19868f;
 }
 /* Main Content */
 .main h1,
@@ -184,7 +189,7 @@ a:active {
 }
 .page-title {
   margin-top: 30px;
-  background-color: gainsboro;
+  background-color: #244e81;
 }
 .page-title h1,
 .page-title h2 {
@@ -196,6 +201,7 @@ a:active {
 }
 .content h2 {
   margin-top: 0;
+  color: #000;
 }
 /* Sidebar */
 .sidebar {
@@ -214,11 +220,11 @@ a:active {
   text-decoration: none;
   color: #000;
   background-color: #fff;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #bcd0e5;
 }
 .sidebar-menu ul a:hover {
   color: #fff;
-  background-color: darkgray;
+  background-color: #19868f;
 }
 /* Catalog */
 .catalog {
@@ -307,7 +313,7 @@ a:active {
   left: 0;
   right: 0;
   min-height: 100px;
-  background-color: gainsboro;
+  background-color: #244e81;
 }
 .main-footer p {
   margin: 0;
