@@ -38,7 +38,7 @@ a:active {
 }
 /* Header */
 .header-main {
-  background-color: cornflowerblue;
+  background-color: #244e81;
 }
 .header-logo {
   float: left;
@@ -48,8 +48,9 @@ a:active {
 }
 .header-title {
   float: right;
-  padding: 25px 10px 10px;
+  padding: 10px 10px;
   font-size: 21px;
+  color: #bcd0e5;
 }
 /* Slider */
 .slider-content {
@@ -65,7 +66,7 @@ a:active {
 }
 /* Main Navigation */
 .main-nav {
-  background-color: gainsboro;
+  background-color: #244e81;
 }
 #menu-top-menu {
   margin: 0;

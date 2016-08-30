@@ -1,0 +1,10 @@
+header colors
+
+row:    #244e81
+text:   #bcd0e5
+
+menu colors:
+
+row:    #244e81
+text:   #bcd0e5
+active: #19868f

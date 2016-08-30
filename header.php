@@ -18,7 +18,7 @@
 				     alt="Logo" width="160" height="75">
 			</a>
 		</div>
-		<div class="header-title">SC-Template</div>
+		<div class="header-title"><h1>Salmon Content</h1></div>
 	</div>
 </header>
 <!-- end of Main Header -->
