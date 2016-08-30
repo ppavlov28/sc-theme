@@ -308,7 +308,9 @@ a:active {
   left: 0;
   right: 0;
   min-height: 100px;
-  background-color: gainsboro;
+  background-color: #244e81;
+  text-align: center;
+  color: #bcd0e5;
 }
 .main-footer p {
   margin: 0;
