@@ -46,12 +46,18 @@ h4 {
 /* Header */
 .header-main {
   background-color: #244e81;
+  padding: 20px 0;
 }
 .header-logo {
   float: left;
 }
 .header-logo a {
   display: inline-block;
+}
+.header-logo img {
+  width: 70%;
+  height: auto;
+  margin-left: 10px;
 }
 .header-title {
   float: right;
