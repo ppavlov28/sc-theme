@@ -18,11 +18,11 @@ body {
   padding-bottom: 100px;
 }
 a {
-  color: #000000;
+  color: #bcd0e5;
 }
 a:hover,
 a:active {
-  color: gray;
+  color: #19868F;
 }
 .clearfix::after {
   content: '';
@@ -75,33 +75,33 @@ a:active {
   font-size: 0;
 }
 #menu-top-menu:hover li.active a {
-  background-color: gainsboro;
+  background-color: #19868F;
 }
 #menu-top-menu:hover li.active a:hover {
   color: #ffffff;
-  background-color: darkgray;
+  background-color: #19868F;
 }
 #menu-top-menu:hover li.active:hover a {
   color: #ffffff;
-  background-color: darkgray;
+  background-color: #19868F;
 }
 #menu-top-menu:hover li.active > .sub-menu a {
-  color: #000000;
-  background-color: #ffffff;
+  color: #bcd0e5;
+  background-color: #19868F;
 }
 #menu-top-menu:hover li.active > .sub-menu a:hover {
   color: #ffffff;
-  background-color: darkgray;
+  background-color: #19868F;
 }
 #menu-top-menu li {
   display: inline-block;
   position: relative;
 }
 #menu-top-menu li.active a {
-  background-color: darkgray;
+  background-color: #19868F;
 }
 #menu-top-menu li.menu-item-has-children:hover {
-  background-color: darkgray;
+  background-color: #19868F;
 }
 #menu-top-menu li.menu-item-has-children:hover > .sub-menu {
   opacity: 1;
@@ -151,11 +151,11 @@ a:active {
   display: block;
   width: auto;
   padding: 10px 20px;
-  background-color: #ffffff;
+  background-color: #244e81;
   border-bottom: 1px solid darkgray;
 }
 #menu-top-menu li > .sub-menu a:hover {
-  background-color: darkgray;
+  background-color: #19868f;
 }
 #menu-top-menu a {
   display: inline-block;
@@ -164,11 +164,11 @@ a:active {
   font-size: 18px;
 }
 #menu-top-menu a:hover {
-  color: #ffffff;
-  background-color: darkgray;
+  color: #bcd0e5;
+  background-color: #19868f;
 }
 #menu-top-menu a:active {
-  color: #ffffff;
+  color: #bcd0e5;
 }
 /* Main Content */
 .main h1,
