@@ -25,8 +25,7 @@
 <!-- Slider -->
 <?php if (is_front_page()) { ?>
 	<section class="slider  container" >
-		<div class="slider-content" style="background-image: url(<?php echo get_template_directory_uri()
-		?>/img/slider_placeholder.jpg)">
+		<div class="slider-content" style="background-image: url(<?php echo get_template_directory_uri() ?>/img/slider_placeholder.jpg)">
 		</div >
 	</section >
 <?php } ?>
