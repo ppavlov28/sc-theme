@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Page
+*/
+?>
+
 <?php get_header(); ?>
 
 <section class="main  container">
@@ -30,10 +36,35 @@
     <!-- Catalog -->
     <div class="container">
         <section class="catalog">
-
-</section>
-</div>
-<!-- end of Catalog -->
+            <?php // query_posts(); ?>
+            <?php if (have_posts()) : ?>
+                <?php while (have_posts()) : the_post(); ?>
+                    <div class="catalog-item">
+                        <div class="catalog-img">
+                            <a href="<?php the_permalink(); ?>">
+                                <?php
+                                //$image = get_field('poster_movie');
+                                $image_url = get_field('movie-poster')['url'];
+                                ?>
+                                <img src="<?php echo $image_url; ?>" alt="Title 1" width="218" height="305">
+                            </a>
+                        </div>
+                        <div class="catalog-content">
+                            <div class="catalog-title">
+                                <h3><a href="<?php the_permalink(); ?>"><?php the_title() ?></a></h3>
+                            </div>
+                            <div class="catalog-info">
+                                <span class="year"><?php echo get_field('movie-year'); ?>,</span>
+                                <span class="country"><?php echo get_field('movie-country'); ?></span>
+                                <span class="movie-style"><?php echo get_field('movie-genre'); ?></span>
+                            </div>
+                        </div>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </section>
+    </div>
+    <!-- end of Catalog -->
 </section>
 
 <?php get_footer(); ?>
