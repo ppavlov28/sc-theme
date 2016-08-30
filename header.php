@@ -14,11 +14,10 @@
 	<div class="wrap clearfix">
 		<div class="header-logo">
 			<a href="/">
-				<img src="<?php echo get_template_directory_uri() ?> . /img/salmon_content_logo_160x75.png"
-				     alt="Logo" width="160" height="75">
+				<img src="<?php echo get_template_directory_uri() ?> . /img/salmon_logo_new.png" alt="Logo" width="64" height="60">
 			</a>
 		</div>
-		<div class="header-title"><h1>Salmon Content</h1></div>
+		<h1 class="header-title">Salmon Content</h1>
 	</div>
 </header>
 <!-- end of Main Header -->
