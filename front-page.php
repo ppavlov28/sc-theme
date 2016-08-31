@@ -43,7 +43,7 @@
 							<a href="<?php the_permalink(); ?>">
 								<?php
 								//$image = get_field('poster_movie');
-								$image_url = get_field('movie-poster')['url'];
+								$image_url = get_field('movie-poster');
 								?>
 								<img src="<?php echo $image_url; ?>" alt="Title 1" width="218" height="305">
 							</a>
@@ -55,6 +55,7 @@
 							<div class="catalog-info">
 								<span class="year"><?php echo get_field('movie-year'); ?>,</span>
 								<span class="country"><?php echo get_field('movie-country'); ?></span>
+								<span class="movie-style"><?php echo get_field('movie-genre'); ?>,</span>
 								<span class="movie-style"><?php echo get_field('movie-genre'); ?></span>
 							</div>
 						</div>
