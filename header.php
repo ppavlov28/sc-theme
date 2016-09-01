@@ -9,26 +9,28 @@
 </head>
 
 <body>
-<!-- Main Header -->
-<header class="header-main  container">
-	<div class="wrap clearfix">
-		<div class="header-logo">
-			<a href="/">
-				<img src="<?php echo get_template_directory_uri() . '/img/salmon_logo_new.png' ?>" alt="Logo"
-				     width="64" height="60">
-			</a>
+<div class="wrapper">
+	<div class="content-full">
+	<!-- Main Header -->
+	<header class="header-main  container">
+		<div class="wrap clearfix">
+			<div class="header-logo">
+				<a href="/">
+					<img src="<?php echo get_template_directory_uri() . '/img/salmon_logo_new.png' ?>" alt="Logo"
+					     width="64" height="60">
+				</a>
+			</div>
+			<h1 class="header-title">Salmon Content</h1>
 		</div>
-		<h1 class="header-title">Salmon Content</h1>
-	</div>
-</header>
-<!-- end of Main Header -->
-<!-- Slider -->
-<?php if (is_front_page()) { ?>
-	<section class="slider  container" >
-		<div class="slider-content" style="background-image: url(<?php echo get_template_directory_uri() ?>/img/slider_placeholder.jpg)">
-		</div >
-	</section >
-<?php } ?>
+	</header>
+	<!-- end of Main Header -->
+	<!-- Slider -->
+	<?php if (is_front_page()) { ?>
+		<section class="slider  container" >
+			<div class="slider-content" style="background-image: url(<?php echo get_template_directory_uri() ?>/img/slider_placeholder.jpg)">
+			</div >
+		</section >
+	<?php } ?>
 <!-- end of Slider -->
 <!-- Main Navigation -->
 

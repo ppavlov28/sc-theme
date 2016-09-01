@@ -28,3 +28,6 @@ register_nav_menus(array(
 	'bottom' => 'Нижнее меню'
 ));
 
+function the_child_category(){
+
+}
