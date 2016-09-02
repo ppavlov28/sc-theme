@@ -352,24 +352,56 @@ h1, h2, h3, h4 {
 }
 
 .movie {
-  padding: @wrap-out;
+  padding: 2*@wrap-out;
   
   &-player {
     float: right;
     width: 71%;
-    min-height: 58px;
-    background-color: #123456;    
+    background-color: #123456;
+    margin-bottom: 2*@wrap-out;
   }
   &-info {
     &-poster {
       float: left;
       width: 27%;
+      margin-bottom: 2*@wrap-out;
       
       img {
         width: 100%;
       }
+      
+      &-responsive {
+        position: relative;
+        height: 0;
+        padding-bottom: 150%;
+        overflow: hidden;
+      }
     }
+    
+    &-content {
+      float: left;
+      width: 27%;
+      clear: left;
+      margin-bottom: 2*@wrap-out;
+
+      
+      td {
+        padding: 5px;
+      }
+    }    
+  }
   
+  &-synopsis {
+    float: right;
+    width: 71%;
+    clear: right;
+    margin-bottom: 2*@wrap-out;
+    
+    h2 {
+      margin-top: 0;
+      margin-bottom: 24px;
+      color: @brand-color;
+    }
   }
 }
 

@@ -281,20 +281,47 @@ h4 {
   color: gray;
 }
 .movie {
-  padding: 10px;
+  padding: 20px;
 }
 .movie-player {
   float: right;
   width: 71%;
-  min-height: 58px;
   background-color: #123456;
+  margin-bottom: 20px;
 }
 .movie-info-poster {
   float: left;
   width: 27%;
+  margin-bottom: 20px;
 }
 .movie-info-poster img {
   width: 100%;
+}
+.movie-info-poster-responsive {
+  position: relative;
+  height: 0;
+  padding-bottom: 150%;
+  overflow: hidden;
+}
+.movie-info-content {
+  float: left;
+  width: 27%;
+  clear: left;
+  margin-bottom: 20px;
+}
+.movie-info-content td {
+  padding: 5px;
+}
+.movie-synopsis {
+  float: right;
+  width: 71%;
+  clear: right;
+  margin-bottom: 20px;
+}
+.movie-synopsis h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #19868f;
 }
 .video-responsive {
   position: relative;
