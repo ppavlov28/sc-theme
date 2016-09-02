@@ -25,6 +25,10 @@ if (function_exists('add_theme_support')) {
 register_nav_menus(array(
 	'top' => 'Верхнее меню',
 	'side' => 'Боковое меню',
-	'bottom' => 'Нижнее меню'
+	'bottom' => 'Нижнее меню',
+	'lang' => 'Выбор языка'
 ));
 
+function sc_catalog_category(){
+
+}
