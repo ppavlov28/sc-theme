@@ -365,6 +365,29 @@ h4 {
     max-width: 624px;
   }
 }
+@media screen and (max-width: 660px) {
+  .movie {
+    padding: 20px;
+  }
+  .movie-player {
+    float: none;
+    width: 100%;
+    /*margin-bottom: 2*@wrap-out;*/
+  }
+  .movie-info-poster {
+    float: none;
+    width: 70%;
+    margin: 0 auto 20px;
+  }
+  .movie-info-content {
+    float: none;
+    width: 100%;
+  }
+  .movie-synopsis {
+    float: none;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 635px) {
   .catalog {
     max-width: 416px;

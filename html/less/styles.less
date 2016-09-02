@@ -457,6 +457,36 @@ h1, h2, h3, h4 {
 
 }
 
+@media screen and (max-width: 660px) {
+  .movie {
+    padding: 2*@wrap-out;
+
+    &-player {
+      float: none;
+      width: 100%;
+      /*margin-bottom: 2*@wrap-out;*/
+    }
+    &-info {
+      &-poster {
+        float: none;
+        width: 70%;
+        margin: 0 auto 2*@wrap-out;
+        }
+
+      &-content {
+        float: none;
+        width: 100%;
+      }
+    }
+    
+    &-synopsis {
+      float: none;
+      width: 100%;
+    }
+
+  }
+}
+
 @media screen and (max-width: 635px) {
   .catalog {
     max-width: 416px;
