@@ -50,7 +50,7 @@
 					<div class="catalog-info">
 						<span class="year"><?php the_field('movie-year'); ?></span>
 						<span class="country"><?php the_field('movie-country'); ?></span>
-						<span class="movie-style"><?php the_tags(); ?></span>
+						<span class="movie-style"><?php the_category(', '); ?></span>
 					</div>
 				</div>
 			</div>
