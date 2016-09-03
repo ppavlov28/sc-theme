@@ -281,31 +281,29 @@ h4 {
 }
 /* Movie page */
 .movie {
-  padding: 20px;
+  padding: 20px 27px;
 }
 .movie-player {
   float: right;
-  width: 71%;
+  width: 69.98%;
   background-color: #123456;
   margin-bottom: 20px;
 }
 .movie-poster {
   float: left;
-  width: 27%;
+  width: 27.99%;
   margin-bottom: 20px;
-}
-.movie-poster img {
-  width: 100%;
 }
 .movie-poster-responsive {
   position: relative;
   height: 0;
-  padding-bottom: 150%;
-  overflow: hidden;
+  padding-bottom: 140.7%;
+  background-position: center center;
+  background-size: cover;
 }
 .movie-info {
   float: left;
-  width: 27%;
+  width: 27.99%;
   clear: left;
   margin-bottom: 20px;
 }
@@ -314,7 +312,7 @@ h4 {
 }
 .movie-synopsis {
   float: right;
-  width: 71%;
+  width: 69.98%;
   clear: right;
   margin-bottom: 20px;
 }
@@ -367,6 +365,7 @@ h4 {
 @media screen and (max-width: 660px) {
   .movie {
     position: relative;
+    padding: 10px;
   }
   .movie-player {
     float: none;

@@ -352,38 +352,34 @@ h1, h2, h3, h4 {
 
 /* Movie page */
 .movie {
-  padding: 2*@wrap-out;
+  padding: 2*@wrap-out 27px;
   
   &-player {
     float: right;
-    width: 71%;
+    width: 69.98%;
     background-color: #123456;
     margin-bottom: 2*@wrap-out;
   }
 
   &-poster {
     float: left;
-    width: 27%;
+    width: 27.99%;
     margin-bottom: 2*@wrap-out;
-
-    img {
-      width: 100%;
-    }
 
     &-responsive {
       position: relative;
       height: 0;
-      padding-bottom: 150%;
-      overflow: hidden;
+      padding-bottom: 140.7%;
+      background-position: center center;
+      background-size: cover;
     }
   }
     
   &-info {
     float: left;
-    width: 27%;
+    width: 27.99%;
     clear: left;
     margin-bottom: 2*@wrap-out;
-
 
     td {
       padding: 5px;
@@ -392,7 +388,7 @@ h1, h2, h3, h4 {
   
   &-synopsis {
     float: right;
-    width: 71%;
+    width: 69.98%;
     clear: right;
     margin-bottom: 2*@wrap-out;
     
@@ -456,6 +452,7 @@ h1, h2, h3, h4 {
 @media screen and (max-width: 660px) {
   .movie {
     position: relative;
+    padding: @wrap-out;
 
     &-player {
       float: none;
