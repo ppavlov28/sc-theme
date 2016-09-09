@@ -13,8 +13,7 @@
 		<!-- Movie page -->
 	<section class="movie  clearfix">
 		<div class="movie-poster">
-			<div class="movie-poster-responsive">
-				<img src="<?php the_field('movie-poster'); ?>" alt="poster_willis">
+			<div class="movie-poster-responsive" style="background-image: url('<?php the_field('movie-poster'); ?>')">
 			</div>
 		</div>
 		<div class="movie-player">
@@ -24,18 +23,19 @@
 		</div>
 		<div class="movie-info">
 			<?php
+				//$post = get_the_ID();
 				$postmeta = array(
-					'Год' => get_field('movie-year'),
-					'Страна' => get_field('movie-country'),
-					'Время' => get_field('movie-time'),
-					'Эпизодов' => get_field('movie-episode')
+					'Год' => 'movie-year',
+					'Страна' => 'movie-country',
+					'Время' => 'movie-time',
+					'Эпизодов' => 'movie-episodes'
 				);
 			?>
 			<table>
 				<?php foreach ($postmeta as $item => $value){ ?>
 					<tr>
-						<td><?php echo $item; ?></td>
-						<td><?php echo $value; ?></td>
+						<td><?php $field_label = get_field_object($value); echo $field_label['label'] . ":"; ?></td>
+						<td><?php $field_value = get_field_object($value); echo $field_value['value']; ?></td>
 					</tr>
 				<?php } ?>
 			</table>
