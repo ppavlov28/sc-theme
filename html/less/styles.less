@@ -383,6 +383,10 @@ h1, h2, h3, h4 {
 
     td {
       padding: 5px;
+      
+      &:first-child {
+        padding-right: 25px;
+      }
     }
   }
   
@@ -411,7 +415,8 @@ h1, h2, h3, h4 {
     top: 0; 
     left: 0; 
     width: 100%;
-    height: 100%; 
+    height: 100%;
+    border: none;
   }
 }
 
@@ -464,11 +469,18 @@ h1, h2, h3, h4 {
 
     &-info {
       position: absolute;
-      left: 55%;
-      top: 60px;
-      float: left;
+      left: 53%;
+      top: 20px;
       width: 40%;
       clear: none;
+      
+      td {
+      padding: 5px;
+      
+        &:first-child {
+          padding-right: 5px;
+        }
+      }
     }
     
     &-synopsis {

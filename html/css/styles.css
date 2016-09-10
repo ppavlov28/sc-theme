@@ -310,6 +310,9 @@ h4 {
 .movie-info td {
   padding: 5px;
 }
+.movie-info td:first-child {
+  padding-right: 25px;
+}
 .movie-synopsis {
   float: right;
   width: 69.98%;
@@ -333,6 +336,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 /* Footer */
 .main-footer {
@@ -375,11 +379,16 @@ h4 {
   }
   .movie-info {
     position: absolute;
-    left: 55%;
-    top: 60px;
-    float: left;
+    left: 53%;
+    top: 20px;
     width: 40%;
     clear: none;
+  }
+  .movie-info td {
+    padding: 5px;
+  }
+  .movie-info td:first-child {
+    padding-right: 5px;
   }
   .movie-synopsis {
     float: none;
