@@ -7,8 +7,8 @@ body {
   height: 100%;
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
 }
 .wrapper {
   position: relative;
@@ -18,7 +18,7 @@ body {
   padding-bottom: 100px;
 }
 a {
-  color: #000;
+  color: #000000;
 }
 a:hover,
 a:active {
@@ -206,7 +206,7 @@ h4 {
 }
 .content h2 {
   margin-top: 0;
-  color: #000;
+  color: #000000;
 }
 /* Sidebar */
 .sidebar {
@@ -223,12 +223,12 @@ h4 {
   display: block;
   padding: 5px 10px;
   text-decoration: none;
-  color: #000;
-  background-color: #fff;
+  color: #000000;
+  background-color: #ffffff;
   border-bottom: 1px solid #bcd0e5;
 }
 .sidebar-menu ul a:hover {
-  color: #fff;
+  color: #ffffff;
   background-color: #19868f;
 }
 /* Catalog */
@@ -244,7 +244,7 @@ h4 {
   width: 170px;
   margin: 0 19px 20px 19px;
   font-size: 16px;
-  background: #fff;
+  background: #ffffff;
 }
 .catalog-item:hover .catalog-img {
   box-shadow: 0 3px 15px rgba(41, 52, 73, 0.4);
@@ -258,7 +258,7 @@ h4 {
   min-height: 238px;
   font-size: 0;
   line-height: 1;
-  background: #fff url('../img/catalog_poster_cat.jpg') center center no-repeat;
+  background: #ffffff url('../img/catalog_poster_cat.jpg') center center no-repeat;
   background-size: cover;
 }
 .catalog-content {
@@ -310,16 +310,17 @@ h4 {
 .movie-info td {
   padding: 5px;
 }
+.movie-info td:first-child {
+  padding-right: 25px;
+}
 .movie-synopsis {
   float: right;
   width: 69.98%;
   clear: right;
   margin-bottom: 20px;
 }
-.movie-synopsis h2 {
-  margin-top: 0;
-  margin-bottom: 24px;
-  color: #19868f;
+.movie-synopsis p {
+  margin-top: 5px;
 }
 .video-responsive {
   position: relative;
@@ -335,6 +336,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
+  border: none;
 }
 /* Footer */
 .main-footer {
@@ -377,11 +379,16 @@ h4 {
   }
   .movie-info {
     position: absolute;
-    left: 55%;
-    top: 60px;
-    float: left;
+    left: 53%;
+    top: 20px;
     width: 40%;
     clear: none;
+  }
+  .movie-info td {
+    padding: 5px;
+  }
+  .movie-info td:first-child {
+    padding-right: 5px;
   }
   .movie-synopsis {
     float: none;
