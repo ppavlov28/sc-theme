@@ -24,4 +24,9 @@
 
 </section>
 
+<?php
+$cat = get_categories('child_of=3');
+var_dump($cat);
+?>
+
 <?php get_footer(); ?>
