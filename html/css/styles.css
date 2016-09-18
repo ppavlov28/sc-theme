@@ -356,14 +356,6 @@ h4 {
   margin: 20px;
   text-align: center;
 }
-.nav-links:hover .page-numbers {
-  font-weight: normal;
-  background-color: #fff;
-}
-.nav-links:hover .page-numbers:hover {
-  font-weight: bold;
-  background-color: #19868f;
-}
 .page-numbers {
   display: inline-block;
   vertical-align: top;
@@ -377,8 +369,8 @@ h4 {
   border-radius: 5px;
 }
 .page-numbers:hover {
-  color: #000000;
-  background-color: #19868f;
+  color: #19868f;
+  font-weight: bold;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .page-numbers.current {
