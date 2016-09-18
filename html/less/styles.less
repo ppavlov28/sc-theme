@@ -420,6 +420,67 @@ h1, h2, h3, h4 {
   }
 }
 
+/* Pagination */
+.pagination {
+  position: relative;
+  padding: 40px;
+
+  .screen-reader-text {
+    text-align: center;
+  }
+/*
+  h2 {
+    position: absolute;
+    left: -999999px;
+  }
+  */
+}
+
+.nav-links {
+  margin: 20px;
+  text-align: center;
+
+  &:hover {
+    .page-numbers{
+      font-weight: normal;
+      background-color: #fff;
+
+      &:hover {
+        font-weight: bold;
+        background-color: @brand-color;
+      }
+    }
+  }
+}
+
+.page-numbers {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 40px;
+  margin-right: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  &:hover {
+    color: @text-color;
+    background-color: @brand-color;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+  }
+
+  &.current {
+    font-weight: bold;
+    background-color: @brand-color;
+
+    &:hover {
+      color: @text-color;
+    }
+  }
+}
+
 /* Footer */
 .main-footer {
   position: absolute;
