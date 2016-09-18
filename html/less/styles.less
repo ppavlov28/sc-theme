@@ -439,18 +439,6 @@ h1, h2, h3, h4 {
 .nav-links {
   margin: 20px;
   text-align: center;
-
-  &:hover {
-    .page-numbers{
-      font-weight: normal;
-      background-color: #fff;
-
-      &:hover {
-        font-weight: bold;
-        background-color: @brand-color;
-      }
-    }
-  }
 }
 
 .page-numbers {
@@ -466,8 +454,8 @@ h1, h2, h3, h4 {
   border-radius: 5px;
 
   &:hover {
-    color: @text-color;
-    background-color: @brand-color;
+    color: @brand-color;
+    font-weight: bold;
     box-shadow: 0 0 10px rgba(0,0,0, 0.3);
   }
 
