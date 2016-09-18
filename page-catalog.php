@@ -17,16 +17,15 @@
 					<span class="year"><?php the_field('movie-year'); ?></span>
 					<span class="country"><?php the_field('movie-country'); ?></span>
 					<span class="movie-style"><?php the_category(', '); ?></span>
+					<?php
+					$cat = get_categories('child_of=3');
+					var_dump($cat);
+					?>
 				</div>
 			</div>
 		</div>
 	<?php } ?>
 
 </section>
-
-<?php
-$cat = get_categories('child_of=3');
-var_dump($cat);
-?>
 
 <?php get_footer(); ?>
