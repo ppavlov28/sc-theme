@@ -32,3 +32,20 @@ register_nav_menus(array(
 function sc_catalog_category(){
 
 }
+
+/*
+ * Настройки темы
+ */
+/*
+function sc_customize() {
+	add_theme_page('Header setting', 'Header setting', 'edit_theme_options', 'my-unique-identifier',
+		'sc_header_setting');
+	// Do stuff with $wp_customize, the WP_Customize_Manager object.
+}
+
+add_action( 'customize_register', 'sc_customize' );
+
+function sc_header_setting(){
+	echo 'Header setting';
+}
+*/
