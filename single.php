@@ -41,9 +41,7 @@
 			</table>
 		</div>
 		<div class="movie-synopsis">
-			<p>
-				<?php the_content(); ?>
-			</p>
+			<?php the_content(); ?>
 		</div>
 	</section>
 	<?php endwhile; ?>
