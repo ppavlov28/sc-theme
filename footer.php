@@ -7,6 +7,7 @@
 		</div>
 	</footer>
 <!-- end of Footer -->
+	<?php wp_footer(); ?>
 </div>
 
 </body>

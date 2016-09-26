@@ -68,7 +68,7 @@ h4 {
 .slider-content {
   min-height: 350px;
   font-size: 0;
-  background: #9fe8ee url('img/slider_placeholder.jpg') right center no-repeat;
+//  background: #9fe8ee url('img/slider_placeholder.jpg') right center no-repeat;
   background-size: cover;
 }
 .slider-content img {
@@ -258,7 +258,7 @@ h4 {
   min-height: 238px;
   font-size: 0;
   line-height: 1;
-  background: #fff url('../img/catalog_poster_cat.jpg') center center no-repeat;
+//  background: #fff url('../img/catalog_poster_cat.jpg') center center no-repeat;
   background-size: cover;
 }
 .catalog-content {
@@ -330,7 +330,8 @@ h4 {
 }
 .video-responsive iframe,
 .video-responsive object,
-.video-responsive embed {
+.video-responsive embed,
+.video-responsive video {
   position: absolute;
   top: 0;
   left: 0;

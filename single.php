@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header(); ?>-
 
 <section class="main  container clearfix page-catalog">
 	<!-- PageTitle -->
@@ -18,7 +18,19 @@
 		</div>
 		<div class="movie-player">
 			<div class="video-responsive">
-				<iframe src="<?php the_field('movie-trailer'); ?>" allowfullscreen></iframe>
+				<?php
+					$pattern = "/^(https?:\/\/)?([\w-_.]+)/";
+					$video_src = get_field('movie-trailer');
+					$site_url = get_site_url();
+					preg_match($pattern, $video_src, $matches);
+					if (strcasecmp($site_url, $matches[0]) == 0){ ?>
+						<video controls width="690" height="388">
+							<source src="<?php the_field('movie-trailer'); ?>">
+						</video> <?php
+					}  else { ?>
+						<iframe src="<?php the_field('movie-trailer'); ?>" allowfullscreen></iframe> <?php
+					}
+				?>
 			</div>
 		</div>
 		<div class="movie-info">

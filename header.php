@@ -3,12 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<title>SC-Template</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php //body_class(); ?>>
 <div class="wrapper">
 	<div class="content-full">
 	<!-- Main Header -->
@@ -26,9 +27,13 @@
 	<!-- end of Main Header -->
 	<!-- Slider -->
 	<?php if (is_front_page()) { ?>
-		<section class="slider  container" >
-			<div class="slider-content" style="background-image: url(<?php echo get_template_directory_uri() ?>/img/slider_placeholder.jpg)">
+		<section class="slider container" >
+			<?php echo do_shortcode("[metaslider id=316]");	?>
+			<!--
+			<div class="slider-content" style="background-image: url(<?php //echo get_template_directory_uri()
+			?>/img/slider_placeholder.jpg)">
 			</div >
+			-->
 		</section >
 	<?php } ?>
 <!-- end of Slider -->
