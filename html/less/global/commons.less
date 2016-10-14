@@ -1,0 +1,51 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: @font-base;
+  font-size: @base-font-size;
+  color: @text-color;
+  background-color: @light-color;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+
+.content-full {
+  padding-bottom: @height-footer;
+}
+
+a {
+  color: @text-color;
+
+  &:hover,
+  &:active {
+    color: @active-color;
+  }
+}
+
+h1, h2, h3, h4 {
+  color: @head-color;
+  font-weight: 300;
+}
+
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: @max-w-container;
+}
+
+.wrap {
+  margin: 0 @wrap-out;
+}

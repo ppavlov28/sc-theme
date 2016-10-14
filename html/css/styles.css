@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300&subset=latin,cyrillic);
-/*********** Mixins **************/
 html {
   height: 100%;
 }
@@ -41,9 +40,8 @@ h4 {
   max-width: 1040px;
 }
 .wrap {
-  margin: 0 10px;
+  margin: 0 20px;
 }
-/* Header */
 .header-main {
   background-color: #244e81;
   padding: 20px 0;
@@ -57,25 +55,27 @@ h4 {
 .header-logo img {
   width: 70%;
   height: auto;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .header-title {
   float: right;
-  padding: 0 10px;
+  padding: 0 20px;
   font-weight: bold;
 }
-/* Slider */
-.slider-content {
-  min-height: 350px;
-  font-size: 0;
-  background: #9fe8ee url('img/slider_placeholder.jpg') right center no-repeat;
-  background-size: cover;
+.main-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 100px;
+  background-color: #244e81;
 }
-.slider-content img {
-  max-width: 100%;
-  height: auto;
+.main-footer p {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 10px;
 }
-/* Main Navigation */
 .main-nav {
   background-color: #244e81;
 }
@@ -179,6 +179,18 @@ h4 {
 #menu-top-menu a:hover {
   background-color: #19868f;
 }
+/* Slider */
+.slider-content {
+  min-height: 350px;
+  font-size: 0;
+  background: #9fe8ee url('img/slider_placeholder.jpg') right center no-repeat;
+  background-size: cover;
+}
+.slider-content img {
+  max-width: 100%;
+  height: auto;
+}
+/* Main Navigation */
 /* Main Content */
 .main h1,
 .main h2,
@@ -242,7 +254,7 @@ h4 {
   vertical-align: top;
   position: relative;
   width: 170px;
-  margin: 0 19px 20px 19px;
+  margin: 0 19px 40px 19px;
   font-size: 16px;
   background: #ffffff;
 }
@@ -281,18 +293,18 @@ h4 {
 }
 /* Movie page */
 .movie {
-  padding: 20px 27px;
+  padding: 40px 27px;
 }
 .movie-player {
   float: right;
   width: 69.98%;
   background-color: #123456;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .movie-poster {
   float: left;
   width: 27.99%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .movie-poster-responsive {
   position: relative;
@@ -305,7 +317,7 @@ h4 {
   float: left;
   width: 27.99%;
   clear: left;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .movie-info td {
   padding: 5px;
@@ -317,10 +329,10 @@ h4 {
   float: right;
   width: 69.98%;
   clear: right;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .movie-synopsis p {
-  margin-top: 5px;
+  margin-top: 0px;
 }
 .video-responsive {
   position: relative;
@@ -380,21 +392,6 @@ h4 {
 .page-numbers.current:hover {
   color: #000000;
 }
-/* Footer */
-.main-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  min-height: 100px;
-  background-color: #244e81;
-}
-.main-footer p {
-  margin: 0;
-  padding: 10px 0;
-  text-align: center;
-  font-size: 10px;
-}
 /* Responsive */
 @media screen and (max-width: 1046px) {
   .catalog {
@@ -409,7 +406,7 @@ h4 {
 @media screen and (max-width: 660px) {
   .movie {
     position: relative;
-    padding: 10px;
+    padding: 20px;
   }
   .movie-player {
     float: none;

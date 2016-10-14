@@ -1,0 +1,29 @@
+{
+  "name": "sc-theme",
+  "version": "1.0.0",
+  "description": "Front-end part",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ppavlov28/sc-theme.git"
+  },
+  "author": "Elena Pavlova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ppavlov28/sc-theme/issues"
+  },
+  "homepage": "https://github.com/ppavlov28/sc-theme#readme",
+  "devDependencies": {
+    "autoprefixer": "6.4.1",
+    "browser-sync": "2.15.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "1.1.0",
+    "gulp-postcss": "6.2.0",
+    "gulp-less": "3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp style",
+    "start": "gulp serve"
+  }
+}
