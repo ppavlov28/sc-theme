@@ -1,24 +1,36 @@
 .header-main {
-  background-color: @bg-color;
+  position: relative;
+  z-index: 15;
+  height: 100px;
+  background-color: @brand-color;
   padding: 20px 0;
+
+  .wrap {
+
+  }
 }
 
-.header-logo {
+.header-main__logo {
   float: left;
+  margin-right: 20px;
 
   a {
     display: inline-block;
+    vertical-align: top;
+    font-size: 0;
   }
 
-  img {
-    width: 70%;
-    height: auto;
-    margin-left: @wrap-out;
-  }
 }
 
-.header-title {
-  float: right;
-  padding: 0 @wrap-out;
-  font-weight: bold;
+.header-main__title {
+  float: left;
+  width: 100px;
+  margin: 0;
+  margin-top: 3px;
+  padding: 0;
+  font-family: @font-base;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
 }
