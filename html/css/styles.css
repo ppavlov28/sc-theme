@@ -203,6 +203,43 @@ img {
   text-transform: uppercase;
   background-color: rgba(51, 51, 51, 0.6);
 }
+.sub-menu.sub-menu2 {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 5;
+  top: -40px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: 2.5s top;
+}
+.sub-menu.sub-menu2 li {
+  display: inline-block;
+  flex-grow: 1;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+.sub-menu.sub-menu2 a {
+  display: block;
+  width: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: rgba(51, 51, 51, 0.6);
+}
+.sub-menu.sub-menu2 a:hover {
+  color: #ff0000;
+}
+.sub-menu.sub-menu2.show {
+  top: 0;
+  transition: 0.5s top;
+}
 /* Slider */
 .slider-content {
   min-height: 350px;
