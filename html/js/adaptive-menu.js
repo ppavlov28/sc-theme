@@ -4,8 +4,11 @@
     var navToggler = document.getElementById('mainMenuToggler');
     if (!navToggler) { return };
 
+    var mainNav = document.getElementById('menu-top-menu');
+
+    mainNav.classList.add('menu-top-menu--close');
     /*
-    var mainNav = document.querySelector('.main-nav'),
+    var mainNav = document.getElementById('menu-top-menu'),
         mainNavList = document.getElementById('mainNav'),
         pageHeader = document.querySelector('.page-header');
 
@@ -13,6 +16,7 @@
      */
     navToggler.addEventListener('click', function() {
         this.classList.toggle('main-menu-toggler--close');
+        mainNav.classList.toggle('menu-top-menu--close');
         /*
         mainNavList.classList.toggle('main-nav__list--opened');
         mainNavList.parentElement.classList.toggle('main-nav--opened');

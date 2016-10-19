@@ -9,8 +9,13 @@
   border: none;
   outline: none;
 
-  @media @desktop-width {
+  @media @tablet-big-width {
     display: none;
+  }
+
+  @media @mobile-big-width {
+    width: 30px;
+    height: 30px;
   }
 
   span {
@@ -21,7 +26,7 @@
     height: 3px;
     width: 100%;
     background-color: @light-color;
-    transition: 1s;
+    transition: 0.5s;
 
     &::before {
       content: "";
@@ -32,7 +37,7 @@
       height: 3px;
       width: 100%;
       background-color: @light-color;
-      transition: 1s;
+      transition: 0.5s;
     }
 
     &::after {
@@ -44,25 +49,25 @@
       height: 3px;
       width: 100%;
       background-color: @light-color;
-      transition: 1s;
+      transition: 0.5s;
     }
   }
 
   &.main-menu-toggler--close {
     span {
       background-color: transparent;
-      transition: 1s;
+      transition: 0.5s;
 
       &::before {
         top: 0;
         transform: rotate(-45deg);
-        transition: 1s;
+        transition: 0.5s;
       }
 
       &::after {
         bottom: 0;
         transform: rotate(45deg);
-        transition: 1s;
+        transition: 0.5s;
       }
     }
   }

@@ -1,10 +1,16 @@
 .header-main {
   position: relative;
   z-index: 15;
-  height: 100px;
-  padding: 20px 0;
+  height: 80px;
+  padding: 15px 0;
   margin-bottom: 40px;
   background-color: @brand-color;
+
+  @media @tablet-width {
+    height: auto;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
   &--index {
     margin-bottom: 0;
@@ -13,7 +19,7 @@
 
 .header-main__logo {
   float: left;
-  margin-right: 20px;
+  margin-right: 15px;
 
   a {
     display: inline-block;
@@ -21,17 +27,29 @@
     font-size: 0;
   }
 
+  img {
+    height: 50px;
+    width: auto;
+
+    @media @mobile-big-width {
+      height: 40px;
+    }
+  }
 }
 
 .header-main__title {
   float: left;
   width: 100px;
   margin: 0;
-  margin-top: 3px;
+  margin-top: -3px;
   padding: 0;
   font-family: @font-base;
   font-size: 24px;
   font-weight: normal;
   text-align: left;
   text-transform: uppercase;
+
+  @media @mobile-big-width {
+    display: none;
+  }
 }
