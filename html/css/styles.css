@@ -41,6 +41,7 @@ h2,
 h3,
 h4 {
   color: #ffffff;
+  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
   font-weight: 300;
 }
 /*
@@ -72,12 +73,6 @@ img {
 }
 .wrap {
   margin: 0 20px;
-}
-@media only screen and (min-width: 1040px) {
-  .wrap {
-    margin-right: 40px;
-    margin-left: 40px;
-  }
 }
 .header-main {
   position: relative;
@@ -125,6 +120,31 @@ img {
   text-align: center;
   font-size: 10px;
 }
+.lang-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: right;
+  margin-left: 10px;
+}
+.lang-list li {
+  display: inline-block;
+  vertical-align: top;
+  padding: 15px 10px;
+  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+}
+.lang-list li.active a {
+  color: #ff0000;
+}
+.lang-list li:last-child {
+  padding-right: 0;
+}
+.lang-list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #ffffff;
+}
 .main-nav {
   float: right;
   font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
@@ -139,7 +159,7 @@ img {
 #menu-top-menu a {
   display: block;
   padding: 10px;
-  font-size: 28px;
+  font-size: 20px;
   text-decoration: none;
   color: #ffffff;
 }
@@ -249,6 +269,121 @@ img {
   transition: 0.5s top;
 }
 */
+.movie {
+  padding: 40px 27px;
+}
+.movie-player {
+  float: right;
+  width: 69.98%;
+  background-color: #123456;
+  margin-bottom: 40px;
+}
+.movie-poster {
+  float: left;
+  width: 27.99%;
+  margin-bottom: 40px;
+}
+.movie-poster-responsive {
+  position: relative;
+  height: 0;
+  padding-bottom: 140.7%;
+  background-position: center center;
+  background-size: cover;
+}
+.movie-info {
+  float: left;
+  width: 27.99%;
+  clear: left;
+  margin-bottom: 40px;
+}
+.movie-info td {
+  padding: 5px;
+  vertical-align: top;
+}
+.movie-info td:first-child {
+  padding-right: 25px;
+}
+.movie-synopsis {
+  float: right;
+  width: 69.98%;
+  clear: right;
+  margin-bottom: 40px;
+}
+.movie-synopsis p {
+  margin-top: 0px;
+}
+.video-responsive {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.video-responsive iframe,
+.video-responsive object,
+.video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.main-menu-toggler {
+  float: right;
+  margin-left: 40px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.main-menu-toggler span {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  font-size: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  transition: 1s;
+}
+.main-menu-toggler span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  transition: 1s;
+}
+.main-menu-toggler span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  height: 3px;
+  width: 100%;
+  background-color: #ffffff;
+  transition: 1s;
+}
+.main-menu-toggler.main-menu-toggler--close span {
+  background-color: transparent;
+  transition: 1s;
+}
+.main-menu-toggler.main-menu-toggler--close span::before {
+  top: 0;
+  transform: rotate(-45deg);
+  transition: 1s;
+}
+.main-menu-toggler.main-menu-toggler--close span::after {
+  bottom: 0;
+  transform: rotate(45deg);
+  transition: 1s;
+}
 /* Slider */
 .slider-content {
   min-height: 350px;
@@ -362,74 +497,10 @@ img {
   color: #ff0000;
 }
 /* Movie page */
-.movie {
-  padding: 40px 27px;
-}
-.movie-player {
-  float: right;
-  width: 69.98%;
-  background-color: #123456;
-  margin-bottom: 40px;
-}
-.movie-poster {
-  float: left;
-  width: 27.99%;
-  margin-bottom: 40px;
-}
-.movie-poster-responsive {
-  position: relative;
-  height: 0;
-  padding-bottom: 140.7%;
-  background-position: center center;
-  background-size: cover;
-}
-.movie-info {
-  float: left;
-  width: 27.99%;
-  clear: left;
-  margin-bottom: 40px;
-}
-.movie-info td {
-  padding: 5px;
-}
-.movie-info td:first-child {
-  padding-right: 25px;
-}
-.movie-synopsis {
-  float: right;
-  width: 69.98%;
-  clear: right;
-  margin-bottom: 40px;
-}
-.movie-synopsis p {
-  margin-top: 0px;
-}
-.video-responsive {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-}
-.video-responsive iframe,
-.video-responsive object,
-.video-responsive embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
 /* Pagination */
 .pagination {
   position: relative;
   padding: 40px;
-  /*
-  h2 {
-    position: absolute;
-    left: -999999px;
-  }
-  */
 }
 .pagination .screen-reader-text {
   text-align: center;
@@ -463,56 +534,67 @@ img {
   color: #000000;
 }
 /* Responsive */
-@media screen and (max-width: 1046px) {
-  .catalog {
-    max-width: 832px;
+@media only screen and (min-width: 660px){
+  .wrap{
+    margin-right: 40px;
+    margin-left: 40px;
   }
 }
-@media screen and (max-width: 843px) {
-  .catalog {
-    max-width: 624px;
+@media only screen and (min-width: 1040px){
+  .main-menu-toggler{
+    display: none;
   }
 }
-@media screen and (max-width: 660px) {
-  .movie {
+@media only screen and (max-width: 559px){
+  .movie{
     position: relative;
     padding: 20px;
   }
-  .movie-player {
+  .movie-player{
     float: none;
     width: 100%;
     clear: both;
   }
-  .movie-poster {
+  .movie-poster{
     width: 50%;
   }
-  .movie-info {
+  .movie-info{
     position: absolute;
     left: 53%;
     top: 20px;
     width: 40%;
     clear: none;
   }
-  .movie-info td {
+  .movie-info td{
     padding: 5px;
   }
-  .movie-info td:first-child {
+  .movie-info td:first-child{
     padding-right: 5px;
   }
-  .movie-synopsis {
+  .movie-synopsis{
     float: none;
     width: 100%;
     clear: both;
   }
 }
-@media screen and (max-width: 635px) {
-  .catalog {
-    max-width: 416px;
+@media screen and (max-width: 360px){
+  .movie-info{
+    font-size: 12px;
+    left: 52%;
   }
 }
-@media screen and (max-width: 360px) {
-  .movie-info {
-    font-size: 14px;
-    left: 52%;
+@media screen and (max-width: 1046px){
+  .catalog{
+    max-width: 832px;
+  }
+}
+@media screen and (max-width: 843px){
+  .catalog{
+    max-width: 624px;
+  }
+}
+@media screen and (max-width: 635px){
+  .catalog{
+    max-width: 416px;
   }
 }

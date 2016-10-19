@@ -1,11 +1,14 @@
 "use strict";
 
-var gulp = require("gulp");
-var less = require("gulp-less");
-var plumber = require("gulp-plumber");
-var postcss = require("gulp-postcss");
-var autoprefixer = require("autoprefixer");
-var server = require("browser-sync").create();
+var gulp = require("gulp"),
+    less = require("gulp-less"),
+    plumber = require("gulp-plumber"),
+    postcss = require("gulp-postcss"),
+    autoprefixer = require("autoprefixer"),
+    mqpacker = require("css-mqpacker"),
+    minify = require("gulp-csso"),
+    rename = require("gulp-rename"),
+    server = require("browser-sync").create();
 
 gulp.task("style", function() {
     gulp.src("html/less/styles.less")
@@ -18,8 +21,14 @@ gulp.task("style", function() {
                 "last 2 Firefox versions",
                 "last 2 Opera versions",
                 "last 2 Edge versions"
-            ]})
+            ]}),
+            mqpacker({
+                sort: true
+            })
         ]))
+        .pipe(gulp.dest("html/css"))
+        .pipe(minify())
+        .pipe(rename("styles.min.css"))
         .pipe(gulp.dest("html/css"))
         .pipe(server.stream());
 });
