@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <title>SC-Template / Catalog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
@@ -15,39 +15,45 @@
       <!-- Main Header -->
       <header class="header-main  container">
         <div class="wrap clearfix">
-          <div class="header-logo">
-            <a href="/">
-              <img src="img/salmon_content_logo_160x75.png" alt="Logo" width="160" height="75">
+          <div class="header-main__logo">
+            <a href="index.html">
+              <img src="img/salmon_logo_new.png" alt="Logo" width="64" height="60">
             </a>
           </div>
-          <div class="header-title">SC-Template</div>
+          <h1 class="header-main__title">Salmon Content</h1>
+          <button class="main-menu-toggler"  id="mainMenuToggler">
+            <span>menu toggler</span>
+          </button>
+          <!-- Languages -->
+          <ul class="lang-list">
+            <li class="active"><a href="">Ru</a></li>
+            <li><a href="">En</a></li>
+          </ul>
+          <!-- end of Languages -->
+          <!-- Main Navigation -->
+          <nav class="main-nav">
+            <ul class="menu-top-menu" id="menu-top-menu">
+              <li>
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="menu-item-has-children  active">
+                <a href="">Каталог</a>
+                <ul class="sub-menu  sub-menu--fixed">
+                  <li><a href="">Теленовеллы</a></li>
+                  <li><a href="">Сериалы</a></li>
+                  <li><a href="">Детские</a></li>
+                  <li><a href="">Детективы</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="contact_us.html">КонтактЫ</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- end of Main Navigation -->
         </div>
       </header>
       <!-- end of Main Header -->
-      <!-- Main Navigation -->
-      <nav class="main-nav  container">
-        <ul id="menu-top-menu">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="">About Us</a>
-          </li>
-          <li class="menu-item-has-children  active">
-            <a href="#">Catalog</a>
-            <ul class="sub-menu">
-              <li><a href="">Теленовеллы</a></li>
-              <li><a href="">Сериалы</a></li>
-              <li><a href="">Детские программы</a></li>
-              <li><a href="">Детективы</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- end of Main Navigation -->
       <section class="main  container  clearfix page-catalog">
         <!-- PageTitle -->
         <div class="page-title">
@@ -72,11 +78,11 @@
         <section class="catalog">
           <div class="catalog-item">
             <div class="catalog-img">
-              <a href="" style="background-image: url('img/catalog_poster_cat.jpg')"></a>
+              <a href="single_page.html" style="background-image: url('img/catalog_poster_cat.jpg')"></a>
             </div>
             <div class="catalog-content">
               <div class="catalog-title">
-                <h3><a href="">Lorem ipsum dolor</a></h3>
+                <h3><a href="single_page.html">Lorem ipsum dolor</a></h3>
               </div>
               <div class="catalog-info">
                 <span class="year">2014</span>
@@ -198,6 +204,7 @@
     </footer>
     <!-- end of Footer -->
   </div>
+  <script src="js/adaptive-menu.js"></script>
 </body>
 
 </html>

@@ -3,11 +3,21 @@ html {
 }
 
 body {
+  min-width: 320px;
   height: 100%;
   font-family: @font-base;
   font-size: @base-font-size;
   color: @text-color;
-  background-color: @light-color;
+  background-color: #cccccc;
+}
+
+html,
+body {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 .wrapper {
@@ -17,6 +27,10 @@ body {
 
 .content-full {
   padding-bottom: @height-footer;
+}
+
+.main {
+  background-color: #f2f2f2;
 }
 
 a {
@@ -29,9 +43,17 @@ a {
 }
 
 h1, h2, h3, h4 {
-  color: @head-color;
+  color: @light-color;
+  font-family: @font-base-cond;
   font-weight: 300;
 }
+
+/*
+img {
+  max-width: 100%;
+  height: auto;
+}
+*/
 
 .clearfix {
   &::after {
@@ -41,6 +63,20 @@ h1, h2, h3, h4 {
   }
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   margin: 0 auto;
   max-width: @max-w-container;
@@ -48,4 +84,9 @@ h1, h2, h3, h4 {
 
 .wrap {
   margin: 0 @wrap-out;
+
+  @media @desktop-width {
+    margin-right: 2*@wrap-out;
+    margin-left: 2*@wrap-out;
+  }
 }

@@ -1,122 +1,214 @@
 .main-nav {
-  background-color: @bg-color;
+  float: right;
+  font-family: @font-base-cond;
+  background-color: transparent;
+
+  @media @tablet-width {
+    float: none;
+    clear: both;
+    padding-top: 10px;
+  }
 }
 
-#menu-top-menu {
+.menu-top-menu {
   .ul-clear();
+  margin-top: 5px;
   font-size: 0;
 
-  a {
-    color: @head-color;
-  }
-
-  &:hover {
-    li.active {
-      a {
-        background-color: @bg-color;
-
-        &:hover {
-          background-color: @brand-color;
-        }
-      }
-
-      &:hover {
-        a {
-          background-color: @brand-color;
-        }
-      }
-
-      & > .sub-menu {
-        a {
-          background-color: @bg-color;
-
-          &:hover {
-            background-color: @brand-color;
-          }
-        }
-      }
-
+  &.menu-top-menu--close {
+    @media @tablet-width {
+      height: 0;
+      overflow: hidden;
     }
   }
 
+  a {
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @light-color;
+
+    @media @mobile-big-width {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    &:hover {
+      color: @active-color;
+    }
+  }
 
   li {
     display: inline-block;
-    position: relative;
+    vertical-align: top;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 0;
+    cursor: pointer;
 
-    &.active {
-      a {
-        background-color: @brand-color;
-      }
+    @media @tablet-width {
+      display: block;
+      margin-right: -@wrap-out;
+      margin-left: -@wrap-out;
+      padding-left: 15px;
+      border-top: 1px  solid fade(@light-color, 80%);
     }
 
     &.menu-item-has-children {
+      padding-bottom: 30px;
+
+      @media @tablet-width {
+        padding-bottom: 0;
+      }
+
       &:hover {
-        background-color: @brand-color;
+       // position: relative;
 
         & > .sub-menu {
-          opacity: 1;
           left: 0;
+          bottom: -40px;
           z-index: 50;
-          transition: 0.5s opacity;
+          height: 40px;
+          transition: 0.5s height, 0.5s bottom;
+
+          @media @tablet-width {
+            position: static;
+            display: block;
+            height: auto;
+          }
+
+          &.sub-menu--fixed {
+            bottom: -40px;
+            height: 40px;
+
+            @media @tablet-width {
+              height: auto;
+            }
+          }
         }
 
-        &::after {
-          transform: scaleY(-1);
-          .triangle(bottom; 7px; @head-color);
+
+        & > a {
+          color: @active-color;
         }
       }
 
-      &::after {
-        content: '';
-        position: absolute;
-        top: 18px;
-        right: 8px;
-        .triangle(bottom; 7px; @head-color);
+      & > .sub-menu.sub-menu--fixed {
+        bottom: -40px;
+        height: 40px;
+
+        @media @tablet-width {
+          height: auto;
+        }
       }
     }
 
 
     & > .sub-menu {
       position: absolute;
-      width: 140%;
-      left: -99999px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 0;
+      left: 0;
+      bottom: 0;
       .ul-clear();
-      opacity: 0;
+      overflow: hidden;
+      transition: 0.3s height ease-in-out, 0.3s bottom ease-in-out;
+      transition-delay: 0.5s;
+
+      @media @tablet-width {
+        position: static;
+        display: block;
+        height: auto;
+
+        //outline: 1px solid yellow;
+      }
 
       li {
-        display: block;
-        width: 100%;
+        flex-grow: 1;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
 
-        &:first-child {
-          a {
-            border-top: 1px solid @head-color;
-          }
+        @media @tablet-width {
+          display: block;
+          text-align: left;
         }
       }
 
       a {
         display: block;
         width: auto;
-        padding: 10px 20px;
-        background-color: @bg-color;
-        border-bottom: 1px solid @head-color;
+        padding-top: 9px;
+        padding-bottom: 9px;
+        font-size: 18px;
+        text-transform: uppercase;
+        background-color: fade(#333333, 60%);
 
-        &:hover {
-          background-color: @brand-color;
+        @media @tablet-width {
+          background-color: transparent;
+          text-transform: none;
         }
       }
     }
   }
 
-  a {
-    display: inline-block;
-    padding: 10px 50px;
-    text-decoration: none;
-    font-size: @nav-font-size;
-
-    &:hover {
-      background-color: @brand-color;
+  & > .active {
+    & > a {
+      text-shadow: 1px 3px 5px fade(#000000, 80%);
     }
   }
 }
+
+.menu-top-menu--close {
+  height: 0;
+}
+
+@media @tablet-width {
+
+}
+
+/*
+.sub-menu.sub-menu2 {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 5;
+  top: -40px;
+  .ul-clear();
+  transition: 2.5s top;
+
+  li {
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  a {
+    display: block;
+    width: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: @light-color;
+    background-color: fade(#333333, 60%);
+
+    &:hover {
+      color: @active-color;
+    }
+  }
+}
+
+.sub-menu.sub-menu2.show {
+  top: 0;
+  transition: 0.5s top;
+}
+*/
