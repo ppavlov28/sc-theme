@@ -1,5 +1,4 @@
 .main-menu-toggler {
-  //display: block;
   float: right;
   margin-left: 2*@wrap-out;
   padding: 0;
@@ -8,6 +7,10 @@
   background-color: transparent;
   border: none;
   outline: none;
+
+  &.no-js {
+    display: none;
+  }
 
   @media @tablet-big-width {
     display: none;
@@ -61,12 +64,16 @@
       &::before {
         top: 0;
         transform: rotate(-45deg);
+        width: 80%;
+        left: 10%;
         transition: 0.5s;
       }
 
       &::after {
         bottom: 0;
         transform: rotate(45deg);
+        width: 80%;
+        left: 10%;
         transition: 0.5s;
       }
     }
