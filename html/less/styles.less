@@ -6,35 +6,24 @@
 @import "blocks/page-footer.less";
 @import "blocks/lang-list.less";
 @import "blocks/main-nav.less";
-@import "blocks/movie.less";
 @import "blocks/main-menu-toggler.less";
+@import "blocks/slider.less";
+@import "blocks/content.less";
+@import "blocks/movie.less";
+@import "blocks/pagination.less";
 
-/* Slider */
-.slider-content {
-  min-height: 350px;
-  font-size: 0;
-  background: lighten(@brand-color, 45%) url('img/slider_placeholder.jpg') right center no-repeat;
-  background-size: cover;
-  
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
-/* Main Navigation */
 
 
 /* Main Content */
 .main {
+  /*
   h1, h2, h3 {
     margin-top: 40px;
     padding-top: 5px;
     padding-bottom: 5px;    
     font-weight: 300;
-    text-transform: capitalize;
   }
-  
+  */
   &.page-catalog {
     .catalog {
       padding-left: 208px;
@@ -42,53 +31,7 @@
   }
 }
 
-.page-title {
-  margin-top: @base-margin;
-  background-color: @bg-color;
-  
-  h1, 
-  h2 {
-    margin: 0;
-    font-size: @h-big-font-size;
-  }
-}
 
-.content {
-  margin-top: @base-margin;
-  
-  h2 {
-    margin-top: 0;
-    color: @text-color;
-  }
-}
-
-/* Sidebar */
-.sidebar {
-  float: left;
-  width: 200px;
-  margin-top: @base-margin;
-  
-  &-menu {
-    ul {
-      .ul-clear();
-    
-      a {
-        display: block;
-        padding: 5px 10px;
-        text-decoration: none;
-        color: @text-color;
-        background-color: @light-color;
-        border-bottom: 1px solid @head-color;
-
-        &:hover {
-          color: @light-color;
-          background-color: @brand-color;
-        }
-      }
-    }
-  }
-
-}
 
 /* Catalog */
 .catalog {
@@ -163,48 +106,7 @@
 
 
 /* Pagination */
-.pagination {
-  position: relative;
-  padding: 40px;
 
-  .screen-reader-text {
-    text-align: center;
-  }
-
-}
-
-.nav-links {
-  margin: 20px;
-  text-align: center;
-}
-
-.page-numbers {
-  display: inline-block;
-  vertical-align: top;
-  min-width: 40px;
-  margin-right: 10px;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-
-  &:hover {
-    color: @brand-color;
-    font-weight: bold;
-    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
-  }
-
-  &.current {
-    font-weight: bold;
-    background-color: @brand-color;
-
-    &:hover {
-      color: @text-color;
-    }
-  }
-}
 
 
 
