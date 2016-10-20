@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <title>SC-Template</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
 <body>
   <div class="wrapper">
     <div class="content-full">
       <!-- Main Header -->
-      <header class="header-main  container">
+      <header class="header-main  header-main--index  container">
         <div class="wrap  clearfix">
           <div class="header-main__logo">
             <a href="/">
@@ -21,14 +21,23 @@
             </a>
           </div>
           <h1 class="header-main__title">Salmon Content</h1>
+          <button class="main-menu-toggler  no-js"  id="mainMenuToggler">
+            <span>menu toggler</span>
+          </button>
+          <!-- Languages -->
+          <ul class="lang-list">
+            <li class="active"><a href="">Ru</a></li>
+            <li><a href="">En</a></li>
+          </ul>
+          <!-- end of Languages -->
           <!-- Main Navigation -->
           <nav class="main-nav">
-            <ul id="menu-top-menu">
+            <ul class="menu-top-menu" id="menu-top-menu">
               <li class="active">
-                <a href="">ГЛАВНАЯ</a>
+                <a href="">Главная</a>
               </li>
               <li class="menu-item-has-children">
-                <a href="catalog.html">КАТАЛОГ</a>
+                <a href="catalog.html">Каталог</a>
                 <ul class="sub-menu">
                   <li><a href="">Теленовеллы</a></li>
                   <li><a href="">Сериалы</a></li>
@@ -37,7 +46,7 @@
                 </ul>
               </li>
               <li>
-                <a href="">КОНТАКТЫ</a>
+                <a href="contact_us.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -205,6 +214,7 @@
   <!--
   <script src="js/submenu.js"></script>
   -->
+  <script src="js/adaptive-menu.js"></script>
 </body>
 
 </html>

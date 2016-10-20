@@ -44,6 +44,7 @@ a {
 
 h1, h2, h3, h4 {
   color: @light-color;
+  font-family: @font-base-cond;
   font-weight: 300;
 }
 
@@ -84,7 +85,7 @@ img {
 .wrap {
   margin: 0 @wrap-out;
 
-  @media @desktop-widths {
+  @media @desktop-width {
     margin-right: 2*@wrap-out;
     margin-left: 2*@wrap-out;
   }
