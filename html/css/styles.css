@@ -421,6 +421,7 @@ img {
 }
 .catalog-info {
   font-size: 14px;
+  font-weight: bold;
   color: #797979;
 }
 .catalog-info span {
