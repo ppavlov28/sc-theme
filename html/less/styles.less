@@ -9,6 +9,7 @@
 @import "blocks/main-menu-toggler.less";
 @import "blocks/slider.less";
 @import "blocks/content.less";
+@import "blocks/catalog.less";
 @import "blocks/movie.less";
 @import "blocks/pagination.less";
 
@@ -16,124 +17,21 @@
 
 /* Main Content */
 .main {
-  /*
-  h1, h2, h3 {
-    margin-top: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;    
-    font-weight: 300;
-  }
-  */
-  &.page-catalog {
-    .catalog {
-      padding-left: 208px;
-    }
-  }
+
 }
 
 
 
 /* Catalog */
-.catalog {
-  margin: @base-margin auto 0 auto;
-  max-width: 1040px;
-  font-size: 0; 
-  
-  &-item {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    width: @sl-item_width;
-    margin: 0 19px 2*@wrap-out 19px;
-    font-size: @base-font-size;
-    background: @light-color;
-    
-    &:hover {
-      .catalog-img {
-        box-shadow: 0 3px 15px rgba(41, 52, 73, 0.4);
-      }
-      
-      .catalog-content {        
-        h3 {
-          font-weight: bold;
-        }
-      }
-    }
-  }
-  
-  &-img {    
-    a {
-      display: block;
-      width: 100%;
-      min-height: 238px;
-      font-size: 0;
-      line-height: 1;
-      background: #fff url('../img/catalog_poster_cat.jpg') center center no-repeat;
-      background-size: cover;
-    }
-  }
-  
-  &-content {
-    padding: 5px;
-  }
-  
-  &-title {
-    
-    h3 {
-      margin: 0 0 5px 0;
-      font-size: @catalog-title-f-size;
-      
-      a {
-        text-decoration: none;
-      }
-    }    
-  }
-  
-  &-info {
-    span {
-      display: inline-block;
-      margin-right: 5px;
-      font-size: @catalog-info-f-size;
-    }
-    
-    .year {
-      color: @active-color;
-    }
-  }
-}
+
 
 /* Movie page */
-
-
-/* Pagination */
 
 
 
 
 /* Responsive */
 
-@media screen and (max-width: 1046px) {
-  .catalog {
-    max-width: 832px;
-  }
-}
-
-@media screen and (max-width: 843px) {
-  .catalog {
-   max-width: 624px;
-  }
-
-}
-
-@media screen and (max-width: 660px) {
-
-}
-
-@media screen and (max-width: 635px) {
-  .catalog {
-    max-width: 416px;
-  }
-}
 
 
   
