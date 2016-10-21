@@ -1,0 +1,42 @@
+.pagination {
+  position: relative;
+  padding: 40px;
+
+  .screen-reader-text {
+    text-align: center;
+  }
+
+}
+
+.nav-links {
+  margin: 20px;
+  text-align: center;
+}
+
+.page-numbers {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 40px;
+  margin-right: 10px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+
+  &:hover {
+    color: @brand-color;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+  }
+
+  &.current {
+    font-weight: bold;
+    background-color: @brand-color;
+
+    &:hover {
+      color: @text-color;
+    }
+  }
+}
