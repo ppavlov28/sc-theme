@@ -2,7 +2,7 @@
 
 <section class="main  container  clearfix page-catalog">
 
-	<div class="page-title">
+	<div class="content-title">
 		<div class="wrap">
 			<h1><?php single_cat_title(); ?></h1>
 		</div>

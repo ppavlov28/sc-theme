@@ -2,7 +2,7 @@
 
 <section class="main  container">
     <!-- PageTitle -->
-    <div class="page-title">
+    <div class="content-title">
         <div class="wrap">
             <h1>Page Title</h1>
         </div>
@@ -21,7 +21,7 @@
     </article>
     <!-- end of Articles -->
     <!-- PageTitle -->
-    <div class="page-title">
+    <div class="content-title">
         <div class="wrap">
             <h2>New Arrivals</h2>
         </div>

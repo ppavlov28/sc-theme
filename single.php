@@ -3,7 +3,7 @@
 <section class="main  container clearfix page-catalog">
 	<!-- PageTitle -->
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div class="page-title">
+		<div class="content-title">
 			<div class="wrap">
 				<h1><?php the_title(); ?></h1>
 			</div>

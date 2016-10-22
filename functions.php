@@ -5,10 +5,10 @@
  */
 
 function sc_style_connection(){
-/*	wp_register_style('sc_theme_reset', get_template_directory_uri() . '/css/normalize.css'); */
+	wp_register_style('sc_theme_reset', get_template_directory_uri() . '/css/normalize.css');
 	wp_register_style('sc_theme_style', get_template_directory_uri() . '/css/styles.css');
 
-/*	wp_enqueue_style('sc_theme_reset'); */
+	wp_enqueue_style('sc_theme_reset');
 	wp_enqueue_style('sc_theme_style');
 }
 

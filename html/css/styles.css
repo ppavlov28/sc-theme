@@ -404,7 +404,7 @@ img {
   min-height: 293px;
   font-size: 0;
   line-height: 1;
-  background: transparent url('../img/catalog_poster_cat.jpg') center center no-repeat;
+  background: transparent url('../html/img/catalog_poster_cat.jpg') center center no-repeat;
   background-size: cover;
 }
 .catalog-content {
