@@ -15,12 +15,20 @@ function sc_style_connection(){
 add_action('wp_enqueue_scripts', 'sc_style_connection');
 
 function sc_jquery_scripts() {
-//	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', 'http://salmoncontent.com/wp-includes/js/jquery/jquery.js?ver=1.12.4');
+	wp_register_script( 'jquery', get_site_url() . '/wp-includes/js/jquery/jquery.js?ver=1.12.4');
+
 	wp_enqueue_script( 'jquery' );
 }
 
 add_action( 'wp_enqueue_scripts', 'sc_jquery_scripts' );
+
+function sc_custom_scripts() {
+	wp_register_script( 'adaptive-menu', get_template_directory_uri() . '/js/adaptive-menu.js', array(), false, true );
+
+	wp_enqueue_script( 'adaptive-menu' );
+}
+
+add_action( 'wp_enqueue_scripts', 'sc_custom_scripts' );
 
 /*===============================================*/
 
