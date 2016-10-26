@@ -38,7 +38,7 @@ a {
   color: #333333;
 }
 a:hover,
-a:active {
+a:current-menu-item {
   color: #ff0000;
 }
 h1,
@@ -60,7 +60,7 @@ img {
   display: table;
   clear: both;
 }
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:current-menu-item) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -143,7 +143,7 @@ img {
   padding: 15px 10px;
   font-family: 'Roboto Condensed', sans-serif;
 }
-.lang-list li.active a {
+.lang-list li.current-menu-item a {
   color: #ff0000;
 }
 .lang-list li:last-child {
@@ -237,7 +237,7 @@ img {
   text-transform: uppercase;
   background-color: rgba(51, 51, 51, 0.6);
 }
-.menu-top-menu > .active > a {
+.menu-top-menu > .current-menu-item > a {
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);
 }
 .menu-top-menu--close {
@@ -274,7 +274,7 @@ img {
     background-color: fade(#333333, 60%);
 
     &:hover {
-      color: @active-color;
+      color: @current-menu-item-color;
     }
   }
 }
@@ -435,7 +435,7 @@ img {
   text-decoration: none;
 }
 .catalog-info a:hover,
-.catalog-info a:active {
+.catalog-info a:current-menu-item {
   text-decoration: underline;
 }
 .movie {

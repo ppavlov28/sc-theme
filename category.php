@@ -8,22 +8,6 @@
 		</div>
 	</div>
 
-	<aside class="sidebar">
-		<nav class="sidebar-menu">
-			<?php
-			if (has_nav_menu('side')) {
-				wp_nav_menu(
-					array(
-						'theme_location' => 'side',
-						'container'      => 'ul',
-						'menu_class'     => 'sidebar-menu'
-					)
-				);
-			}
-			?>
-		</nav>
-	</aside>
-
 	<section class="catalog">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

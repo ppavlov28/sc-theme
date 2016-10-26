@@ -149,15 +149,31 @@ function sc_catalog_category(){
 }
 
 /*
- * Настройки темы
+ * Построение меню
  */
 
-function sc_theme_customize(){
-	add_theme_page('SC Theme', 'SC Theme', 'edit_theme_option', 'sc-uid', 'sc_set_one');
+class sc_fp_menu_walker extends Walker_Nav_Menu {
+	function start_lvl( &$output, $depth = 0, $args = array() ) {
+		$current_url = (is_ssl()?'https://':'http://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+		$page_url = (is_ssl()?'https://':'http://').'salmoncontent.com/category/catalog/';
+		if ($current_url != $page_url){
+			$indent = str_repeat("\t", $depth);
+			$output .= "\n$indent<ul class=\"sub-menu\">\n";
+		} else {
+			$indent = str_repeat("\t", $depth);
+			$output .= "\n$indent<ul class=\"sub-menu   sub-menu--fixed\">\n";
+		}
+	}
 }
 
-add_action('admin_menu', 'sc_theme_customize');
-
-function sc_set_one(){
-	echo "My Setting";
+class sc_fp2_menu_walker extends Walker_Nav_Menu {
+	function start_lvl( &$output, $depth = 0, $args = array() ) {
+		if (is_front_page() || is_page('contacts')) {
+			$indent = str_repeat("\t", $depth);
+			$output .= "\n$indent<ul class=\"sub-menu\">\n";
+		} else {
+			$indent = str_repeat("\t", $depth);
+			$output .= "\n$indent<ul class=\"sub-menu  sub-menu--fixed\">\n";
+		}
+	}
 }
