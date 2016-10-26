@@ -7,24 +7,25 @@
 }
 
 .content-title {
+  margin-top: 40px;
   background-color: @bg-color;
+
+  @media @tablet-width {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 
   h1,
   h2 {
     margin: 0;
-    margin-top: 40px;
     padding-top: 13px;
     padding-bottom: 13px;
     font-weight: 300;
     font-size: 28px;
   }
 
-
-
   &--top0 {
-    h1,
-    h2 {
-      margin-top: 0;
-    }
+    margin-top: 0;
   }
 }
