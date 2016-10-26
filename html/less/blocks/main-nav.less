@@ -156,7 +156,21 @@
     }
   }
 
-  & > .active {
+  & > .current-menu-item {
+    & > a {
+      text-shadow: 1px 3px 5px fade(#000000, 80%);
+    }
+  }
+
+  & > .current-menu-parent {
+    & > a {
+      text-shadow: 1px 3px 5px fade(#000000, 80%);
+    }
+  }
+}
+
+.current-menu-parent {
+  .current-menu-item {
     & > a {
       text-shadow: 1px 3px 5px fade(#000000, 80%);
     }
