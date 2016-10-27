@@ -864,11 +864,14 @@ img {
 .feedback-form__item {
   margin-bottom: 20px;
 }
-.feedback-form__item input,
-.feedback-form__item textarea {
+.feedback-form input,
+.feedback-form textarea {
   width: 100%;
   padding: 10px;
 }
-.feedback-form__item textarea {
+.feedback-form input[type="submit"] {
+  max-width: 180px;
+}
+.feedback-form textarea {
   resize: none;
 }
