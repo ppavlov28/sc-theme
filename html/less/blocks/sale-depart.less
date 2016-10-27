@@ -21,4 +21,55 @@
       }
     }
   }
+
+  &--footer {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 15px;
+      height: 1px;
+      background-color: @light-color;
+    }
+
+    p {
+      padding: 5px 0;
+    }
+
+    @media only screen and (min-width: 520px) {
+      padding-top: 0;
+      width: 50%;
+      float: right;
+      text-align: left;
+
+      &::before {
+        height: 0;
+      }
+
+      &.sale-depart--footer {
+        float: right;
+
+        p {
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    a {
+      font-size: 18px;
+      color: @light-color;
+
+      &:hover {
+        color: @light-color;
+      }
+    }
+
+  }
 }

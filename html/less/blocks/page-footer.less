@@ -4,13 +4,44 @@
   left: 0;
   right: 0;
   min-height: @height-footer;
+  padding-top: 20px;
   color: @light-color;
   background-color: @bg-color;
 
   p {
     margin: 0;
-    padding: 20px 0;
-    text-align: center;
+    padding: 10px 0;
     font-size: 12px;
+  }
+
+  &__menu {
+    .ul-clear();
+
+    @media only screen and (min-width: 520px) {
+      width: 40%;
+      float: left;
+    }
+
+    li {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    a {
+      color: @light-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__item {
+    font-weight: bold;
+  }
+
+  .main-footer__info {
+    margin-top: 20px;
   }
 }
