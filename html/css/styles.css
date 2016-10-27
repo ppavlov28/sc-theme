@@ -30,9 +30,23 @@ body {
 }
 .content-full {
   padding-bottom: 80px;
+  background-color: #ffffff;
 }
 .main {
   background-color: #f2f2f2;
+}
+.main--white {
+  background-color: #ffffff;
+}
+.welcome {
+  padding: 40px 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+@media only screen and (min-width: 780px) {
+  .welcome {
+    padding: 60px 110px;
+  }
 }
 a {
   color: #333333;
@@ -744,4 +758,47 @@ img {
 }
 .page-numbers.current:hover {
   color: #333333;
+}
+.sale-depart {
+  padding-top: 40px;
+  padding-bottom: 0;
+  text-align: center;
+}
+@media only screen and (min-width: 780px) {
+  .sale-depart {
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+}
+.sale-depart__item a {
+  font-size: 24px;
+  text-decoration: none;
+}
+.sale-depart__item a:hover {
+  color: #006699;
+  text-decoration: underline;
+}
+.feedback-form {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+@media only screen and (min-width: 780px) {
+  .feedback-form {
+    width: 50%;
+    float: right;
+    padding-top: 40px;
+  }
+}
+.feedback-form__item {
+  margin-bottom: 20px;
+}
+.feedback-form__item input,
+.feedback-form__item textarea {
+  width: 100%;
+  padding: 10px;
+}
+.feedback-form__item textarea {
+  resize: none;
 }

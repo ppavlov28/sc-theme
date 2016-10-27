@@ -1,0 +1,24 @@
+.sale-depart {
+  padding-top: 40px;
+  padding-bottom: 0;
+  text-align: center;
+
+  @media @tablet-big-width {
+    width: 50%;
+    float: left;
+    padding-bottom: 40px;
+    text-align: left;
+  }
+
+  &__item {
+    a {
+      font-size: 24px;
+      text-decoration: none;
+
+      &:hover {
+        color: @brand-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
