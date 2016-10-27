@@ -1,39 +1,59 @@
 .pagination {
   position: relative;
-  padding: 40px;
+  padding: 40px 0;
 
   .screen-reader-text {
     text-align: center;
+    font-size: 0;
   }
 
 }
 
 .nav-links {
   margin: 20px;
+  font-size: 16px;
   text-align: center;
+
+  @media @mobile-big-width {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 }
 
 .page-numbers {
   display: inline-block;
   vertical-align: top;
   min-width: 40px;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   padding: 10px;
   text-align: center;
   text-decoration: none;
-  background-color: #fff;
+  background-color: @light-color;
   border: 1px solid #ddd;
   border-radius: 5px;
 
+  @media @tablet-width {
+    margin-right: 2px;
+    margin-left: 2px;
+  }
+
+  @media @mobile-big-width {
+    min-width: 30px;
+    padding: 6px 2px;
+    margin-bottom: 10px;
+  }
+
   &:hover {
-    color: @brand-color;
+    color: @text-color;
     font-weight: bold;
     box-shadow: 0 0 10px rgba(0,0,0, 0.3);
   }
 
   &.current {
     font-weight: bold;
-    background-color: @brand-color;
+    color: @light-color;
+    background-color: @hover-color;
 
     &:hover {
       color: @text-color;

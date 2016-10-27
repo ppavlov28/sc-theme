@@ -34,12 +34,14 @@
 			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<?php
+				$walker = new sc_fp2_menu_walker();
 				if (has_nav_menu('top')) {
 					wp_nav_menu(
 						array(
 							'theme_location' => 'top',
 							'container'      => 'ul',
-							'menu_class'     => 'menu-top-menu'
+							'menu_class'     => 'menu-top-menu',
+							'walker'         => $walker
 						)
 					);
 				}

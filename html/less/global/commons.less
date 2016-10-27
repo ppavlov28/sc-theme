@@ -12,7 +12,6 @@ body {
 
   @media @mobile-width {
     font-size: 14px;
-    color: red;
   }
 }
 
@@ -32,10 +31,25 @@ body {
 
 .content-full {
   padding-bottom: @height-footer;
+  background-color: @light-color;
 }
 
 .main {
   background-color: #f2f2f2;
+
+  &--white {
+    background-color: @light-color;
+  }
+}
+
+.welcome {
+  padding: 40px 10px;
+  text-align: center;
+  background-color: #f2f2f2;
+
+  @media @tablet-big-width {
+    padding: 60px 110px;
+  }
 }
 
 a {

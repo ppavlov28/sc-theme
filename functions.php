@@ -15,12 +15,20 @@ function sc_style_connection(){
 add_action('wp_enqueue_scripts', 'sc_style_connection');
 
 function sc_jquery_scripts() {
-//	wp_deregister_script( 'jquery' );
-	wp_register_script( 'jquery', 'http://salmoncontent.com/wp-includes/js/jquery/jquery.js?ver=1.12.4');
+	wp_register_script( 'jquery', get_site_url() . '/wp-includes/js/jquery/jquery.js?ver=1.12.4');
+
 	wp_enqueue_script( 'jquery' );
 }
 
 add_action( 'wp_enqueue_scripts', 'sc_jquery_scripts' );
+
+function sc_custom_scripts() {
+	wp_register_script( 'adaptive-menu', get_template_directory_uri() . '/js/adaptive-menu.js', array(), false, true );
+
+	wp_enqueue_script( 'adaptive-menu' );
+}
+
+add_action( 'wp_enqueue_scripts', 'sc_custom_scripts' );
 
 /*===============================================*/
 
@@ -141,15 +149,31 @@ function sc_catalog_category(){
 }
 
 /*
- * Настройки темы
+ * Построение меню
  */
 
-function sc_theme_customize(){
-	add_theme_page('SC Theme', 'SC Theme', 'edit_theme_option', 'sc-uid', 'sc_set_one');
+class sc_fp_menu_walker extends Walker_Nav_Menu {
+	function start_lvl( &$output, $depth = 0, $args = array() ) {
+		$current_url = (is_ssl()?'https://':'http://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+		$page_url = (is_ssl()?'https://':'http://').'salmoncontent.com/category/catalog/';
+		if ($current_url != $page_url){
+			$indent = str_repeat("\t", $depth);
+			$output .= "\n$indent<ul class=\"sub-menu\">\n";
+		} else {
+			$indent = str_repeat("\t", $depth);
+			$output .= "\n$indent<ul class=\"sub-menu   sub-menu--fixed\">\n";
+		}
+	}
 }
 
-add_action('admin_menu', 'sc_theme_customize');
-
-function sc_set_one(){
-	echo "My Setting";
+class sc_fp2_menu_walker extends Walker_Nav_Menu {
+	function start_lvl( &$output, $depth = 0, $args = array() ) {
+		if (is_front_page() || is_page('contacts')) {
+			$indent = str_repeat("\t", $depth);
+			$output .= "\n$indent<ul class=\"sub-menu\">\n";
+		} else {
+			$indent = str_repeat("\t", $depth);
+			$output .= "\n$indent<ul class=\"sub-menu  sub-menu--fixed\">\n";
+		}
+	}
 }

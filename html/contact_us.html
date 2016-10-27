@@ -11,9 +11,9 @@
 
 <body>
 <div class="wrapper">
-    <div class="content-full">
+    <div class="content-full  container">
         <!-- Main Header -->
-        <header class="header-main  container">
+        <header class="header-main">
             <div class="wrap clearfix">
                 <div class="header-main__logo">
                     <a href="index.html">
@@ -45,7 +45,7 @@
                                 <li><a href="">Детективы</a></li>
                             </ul>
                         </li>
-                        <li class="active">
+                        <li class="current-menu-item">
                             <a href="contact_us.html">Контакты</a>
                         </li>
                     </ul>
@@ -54,21 +54,75 @@
             </div>
         </header>
         <!-- end of Main Header -->
-        <section class="main  container  clearfix page-catalog">
+        <section class="main  main--white  clearfix page-catalog">
             <!-- PageTitle -->
             <div class="content-title">
                 <div class="wrap">
-                    <h1>О нас</h1>
+                    <h1>Наши контакты</h1>
                 </div>
             </div>
             <!-- end of PageTitle -->
-
+            <!-- Welcome -->
+            <div class="welcome">
+                <div class="wrap">
+                    Будем рады помочь по любым вопросам. Звоните нам, пишите на электронную почту
+                    или воспользуйтесь формой обратной связи.
+                </div>
+            </div>
+            <!-- end of Welcome -->
+            <div class="clearfix">
+                <div class="sale-depart">
+                    <div class="wrap">
+                        <p>Отдел продаж:</p>
+                        <p class="sale-depart__item">
+                            <a href="tel:+380995553322">+380 99 555 33 22</a>
+                        </p>
+                        <p class="sale-depart__item">
+                            <a href="mailto:sales@salmoncontent.com">sales@salmoncontent.com</a>
+                        </p>
+                    </div>
+                </div>
+                <form action="" class="feedback-form" method="post" name="feedback-form">
+                    <div class="wrap">
+                        <p>Обратная связь</p>
+                        <div class="feedback-form__item">
+                            <input type="text" name="name" placeholder="Введите имя" required autofocus>
+                        </div>
+                        <div class="feedback-form__item">
+                            <input type="email" name="email" placeholder="Введите email" required>
+                        </div>
+                        <div class="feedback-form__item">
+                            <textarea name="message" placeholder="Ваше сообщение" required cols="30" rows="10"></textarea>
+                        </div>
+                        <input type="submit" value="Отправить">
+                    </div>
+                </form>
+            </div>
         </section>
     </div>
     <!-- Footer -->
     <footer class="main-footer  container">
         <div class="wrap">
-            <p class="info">&copy; SC-Template</p>
+            <ul class="main-footer__menu">
+                <li class="main-footer__item"><a href="catalog.html">Каталог</a></li>
+                <li><a href="">Теленовеллы</a></li>
+                <li><a href="">Детские программы</a></li>
+                <li><a href="">Детективные сериалы</a></li>
+                <li><a href="">Ситкомы</a></li>
+            </ul>
+            <div class="sale-depart  sale-depart--footer">
+                <div class="wrap">
+                    <p>Отдел продаж:</p>
+                    <p class="sale-depart__item">
+                        <a href="tel:+380995553322">+380 99 555 33 22</a>
+                    </p>
+                    <p class="sale-depart__item">
+                        <a href="mailto:sales@salmoncontent.com">sales@salmoncontent.com</a>
+                    </p>
+                    <p class="main-footer__info">&copy; 2016 Salmoncontent Все права защищены</p>
+                </div>
+            </div>
+
         </div>
     </footer>
     <!-- end of Footer -->

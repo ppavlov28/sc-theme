@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,700&subset=cyrillic');
 /*
 @middle-font-size: @base-font-size + 5;
 @big-font-size: @base-font-size + 8;
@@ -10,7 +10,7 @@ html {
 body {
   min-width: 320px;
   height: 100%;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   color: #333333;
   background-color: #cccccc;
@@ -38,7 +38,7 @@ a {
   color: #333333;
 }
 a:hover,
-a:active {
+a:current-menu-item {
   color: #ff0000;
 }
 h1,
@@ -46,7 +46,7 @@ h2,
 h3,
 h4 {
   color: #ffffff;
-  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
 }
 /*
@@ -60,7 +60,7 @@ img {
   display: table;
   clear: both;
 }
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:current-menu-item) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -109,7 +109,8 @@ img {
   margin: 0;
   margin-top: -3px;
   padding: 0;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
   font-size: 24px;
   font-weight: normal;
   text-align: left;
@@ -140,9 +141,9 @@ img {
   display: inline-block;
   vertical-align: top;
   padding: 15px 10px;
-  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.lang-list li.active a {
+.lang-list li.current-menu-item a {
   color: #ff0000;
 }
 .lang-list li:last-child {
@@ -156,7 +157,7 @@ img {
 }
 .main-nav {
   float: right;
-  font-family: 'Roboto Condensed', 'Arial Narrow', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   background-color: transparent;
 }
 .menu-top-menu {
@@ -236,7 +237,7 @@ img {
   text-transform: uppercase;
   background-color: rgba(51, 51, 51, 0.6);
 }
-.menu-top-menu > .active > a {
+.menu-top-menu > .current-menu-item > a {
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);
 }
 .menu-top-menu--close {
@@ -273,7 +274,7 @@ img {
     background-color: fade(#333333, 60%);
 
     &:hover {
-      color: @active-color;
+      color: @current-menu-item-color;
     }
   }
 }
@@ -434,7 +435,7 @@ img {
   text-decoration: none;
 }
 .catalog-info a:hover,
-.catalog-info a:active {
+.catalog-info a:current-menu-item {
   text-decoration: underline;
 }
 .movie {
