@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>SC-Template / Catalog</title>
+    <title>Catalog / Telenovell</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.min.css">
@@ -36,17 +36,17 @@
                         <li>
                             <a href="index.html">Главная</a>
                         </li>
-                        <li class="menu-item-has-children">
-                            <a href="catalog.html">Каталог</a>
-                            <ul class="sub-menu">
-                                <li><a href="">Теленовеллы</a></li>
+                        <li class="menu-item-has-children  current-menu-parent">
+                            <a href="">Каталог</a>
+                            <ul class="sub-menu  sub-menu--fixed">
+                                <li class="current-menu-item"><a href="telenovell.html">Теленовеллы</a></li>
                                 <li><a href="">Сериалы</a></li>
                                 <li><a href="">Детские</a></li>
                                 <li><a href="">Детективы</a></li>
                             </ul>
                         </li>
-                        <li class="current-menu-item">
-                            <a href="contact_us.html">Контакты</a>
+                        <li>
+                            <a href="contact_us.html">КонтактЫ</a>
                         </li>
                     </ul>
                 </nav>
@@ -54,52 +54,31 @@
             </div>
         </header>
         <!-- end of Main Header -->
-        <section class="main  main--white  clearfix page-catalog  container">
+        <section class="main  container">
             <!-- PageTitle -->
             <div class="content-title">
                 <div class="wrap">
-                    <h1>Наши контакты</h1>
+                    <h1>Наши программы</h1>
                 </div>
             </div>
             <!-- end of PageTitle -->
-            <!-- Welcome -->
-            <div class="welcome">
-                <div class="wrap">
-                    Будем рады помочь по любым вопросам. Звоните нам, пишите на электронную почту
-                    или воспользуйтесь формой обратной связи.
-                </div>
-            </div>
-            <!-- end of Welcome -->
-            <!--
-            <div class="clearfix">
-                <div class="sale-depart">
-                    <div class="wrap">
-                        <p>Отдел продаж:</p>
-                        <p class="sale-depart__item">
-                            <a href="tel:+380995553322">+380 99 555 33 22</a>
-                        </p>
-                        <p class="sale-depart__item">
-                            <a href="mailto:sales@salmoncontent.com">sales@salmoncontent.com</a>
-                        </p>
-                    </div>
-                </div>
-                <form action="" class="feedback-form" method="post" name="feedback-form">
-                    <div class="wrap">
-                        <p>Обратная связь</p>
-                        <div class="feedback-form__item">
-                            <input type="text" name="name" placeholder="Введите имя" required autofocus>
-                        </div>
-                        <div class="feedback-form__item">
-                            <input type="email" name="email" placeholder="Введите email" required>
-                        </div>
-                        <div class="feedback-form__item">
-                            <textarea name="message" placeholder="Ваше сообщение" required cols="30" rows="10"></textarea>
-                        </div>
-                        <input type="submit" value="Отправить">
-                    </div>
-                </form>
-            </div>
-            -->
+            <!-- Catalog -->
+
+            <!-- end of Catalog -->
+            <!-- Pagination -->
+            <nav class="navigation pagination" role="navigation">
+                <h2 class="screen-reader-text">Навигация по записям</h2>
+                <div class="nav-links"><a class="prev page-numbers" href="http://salmoncontent.com/category/catalog/">&larr;</a>
+                    <a class='page-numbers' href='http://salmoncontent.com/category/catalog/'>1</a>
+                    <span class='page-numbers current'>2</span>
+                    <a class='page-numbers' href='http://salmoncontent.com/category/catalog/page/3/'>3</a>
+                    <a class='page-numbers' href='http://salmoncontent.com/category/catalog/page/4/'>4</a>
+                    <a class='page-numbers' href='http://salmoncontent.com/category/catalog/page/4/'>5</a>
+                    <a class='page-numbers' href='http://salmoncontent.com/category/catalog/page/4/'>6</a>
+                    <a class='page-numbers' href='http://salmoncontent.com/category/catalog/page/4/'>7</a>
+                    <a class="next page-numbers" href="http://salmoncontent.com/category/catalog/page/3/">&rarr;</a></div>
+            </nav>
+            <!-- end of Pagination -->
         </section>
     </div>
     <!-- Footer -->
