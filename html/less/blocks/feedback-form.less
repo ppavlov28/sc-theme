@@ -1,0 +1,28 @@
+.feedback-form {
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media @tablet-big-width {
+    width: 50%;
+    float: right;
+    padding-top: 40px;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+  }
+
+  input[type="submit"] {
+    max-width: 180px;
+  }
+
+  textarea {
+    resize: none;
+  }
+}
