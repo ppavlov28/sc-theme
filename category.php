@@ -43,7 +43,7 @@
 	';
 	}
 	?>
-	<?php the_posts_pagination(); ?>
+	<?php the_posts_pagination( array('prev_text' => __('&larr;'),'next_text' => __('&rarr;'))); ?>
 
 </section>
 

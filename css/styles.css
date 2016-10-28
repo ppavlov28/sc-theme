@@ -1,16 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700|Roboto:300,400,700&subset=cyrillic');
-/*
-@middle-font-size: @base-font-size + 5;
-@big-font-size: @base-font-size + 8;
-@nav-font-size: @base-font-size + 2;
-*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700&subset=cyrillic');
 html {
   height: 100%;
 }
 body {
   min-width: 320px;
   height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   color: #333333;
   background-color: #cccccc;
@@ -29,7 +24,7 @@ body {
   min-height: 100%;
 }
 .content-full {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 }
 .main {
   background-color: #f2f2f2;
@@ -38,7 +33,7 @@ a {
   color: #333333;
 }
 a:hover,
-a:current-menu-item {
+a:active {
   color: #ff0000;
 }
 h1,
@@ -46,7 +41,7 @@ h2,
 h3,
 h4 {
   color: #ffffff;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   font-weight: 300;
 }
 /*
@@ -60,7 +55,7 @@ img {
   display: table;
   clear: both;
 }
-.visually-hidden:not(:focus):not(:current-menu-item) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -105,15 +100,15 @@ img {
 }
 .header-main__title {
   float: left;
-  width: 100px;
+  width: 110px;
+  padding: 0;
   margin: 0;
   margin-top: -3px;
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-    line-height: 1.2;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 24px;
   font-weight: normal;
   text-align: left;
+  line-height: 1.2;
   text-transform: uppercase;
 }
 .main-footer {
@@ -121,14 +116,15 @@ img {
   bottom: 0;
   left: 0;
   right: 0;
-  min-height: 100px;
+  min-height: 80px;
+  color: #ffffff;
   background-color: #244e81;
 }
 .main-footer p {
   margin: 0;
-  padding: 10px 0;
+  padding: 20px 0;
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
 }
 .lang-list {
   margin: 0;
@@ -141,9 +137,9 @@ img {
   display: inline-block;
   vertical-align: top;
   padding: 15px 10px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
 }
-.lang-list li.current-menu-item a {
+.lang-list li.active a {
   color: #ff0000;
 }
 .lang-list li:last-child {
@@ -157,7 +153,7 @@ img {
 }
 .main-nav {
   float: right;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   background-color: transparent;
 }
 .menu-top-menu {
@@ -240,6 +236,12 @@ img {
 .menu-top-menu > .current-menu-item > a {
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);
 }
+.menu-top-menu > .current-menu-parent > a {
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);
+}
+.current-menu-parent .current-menu-item > a {
+  text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);
+}
 .menu-top-menu--close {
   height: 0;
 }
@@ -274,7 +276,7 @@ img {
     background-color: fade(#333333, 60%);
 
     &:hover {
-      color: @current-menu-item-color;
+      color: @active-color;
     }
   }
 }
@@ -405,7 +407,7 @@ img {
   min-height: 293px;
   font-size: 0;
   line-height: 1;
-  background: transparent url('../html/img/catalog_poster_cat.jpg') center center no-repeat;
+  background: transparent url('../img/catalog_poster_cat.jpg') center center no-repeat;
   background-size: cover;
 }
 .catalog-content {
@@ -435,7 +437,7 @@ img {
   text-decoration: none;
 }
 .catalog-info a:hover,
-.catalog-info a:current-menu-item {
+.catalog-info a:active {
   text-decoration: underline;
 }
 .movie {
@@ -499,20 +501,23 @@ img {
 }
 .pagination {
   position: relative;
-  padding: 40px;
+  padding: 40px 0;
 }
 .pagination .screen-reader-text {
   text-align: center;
+  font-size: 0;
 }
 .nav-links {
   margin: 20px;
+  font-size: 16px;
   text-align: center;
 }
 .page-numbers {
   display: inline-block;
   vertical-align: top;
   min-width: 40px;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-left: 5px;
   padding: 10px;
   text-align: center;
   text-decoration: none;
@@ -527,15 +532,11 @@ img {
 }
 .page-numbers.current {
   font-weight: bold;
-  background-color: #006699;
+  background-color: #009999;
 }
 .page-numbers.current:hover {
   color: #333333;
 }
-/* Main Content */
-/* Catalog */
-/* Movie page */
-/* Responsive */
 @media only screen and (min-width: 780px){
   .main-menu-toggler{
     display: none;
@@ -550,14 +551,13 @@ img {
 @media only screen and (max-width: 420px){
   body{
     font-size: 14px;
-    color: red;
   }
 }
 @media only screen and (max-width: 780px){
   .header-main{
     height: auto;
-    margin-bottom: 0;
     padding-bottom: 0;
+    margin-bottom: 0;
   }
   .main-nav{
     float: none;
