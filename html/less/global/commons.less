@@ -101,6 +101,10 @@ img {
 .container {
   margin: 0 auto;
   max-width: @max-w-container;
+
+  @media @desktop-width {
+    min-width: @max-w-container;
+  }
 }
 
 .wrap {
