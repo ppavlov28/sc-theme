@@ -27,7 +27,12 @@ body {
 .wrapper {
   display: table;
   height: 100%;
+  width: 100%;
   margin: 0 auto;
+
+  @media only screen and (min-width: 1057px) {
+    width: @max-w-container;
+  }
 }
 
 .content-full {
@@ -101,10 +106,6 @@ img {
 .container {
   margin: 0 auto;
   max-width: @max-w-container;
-
-  @media @desktop-width {
-    min-width: @max-w-container;
-  }
 }
 
 .wrap {
