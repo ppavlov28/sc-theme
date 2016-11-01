@@ -34,7 +34,7 @@
 			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<?php
-				$walker = new sc_fp2_menu_walker();
+				$walker = new sc_fp_menu_walker();
 				if (has_nav_menu('top')) {
 					wp_nav_menu(
 						array(
