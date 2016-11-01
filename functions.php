@@ -177,3 +177,22 @@ class sc_fp2_menu_walker extends Walker_Nav_Menu {
 		}
 	}
 }
+
+/*
+ * Вывод категорий
+ */
+
+function sc_the_category(){
+	$parent = 3;
+	$output = "";
+	$post_cat = get_the_category();
+	$count_cat = count($post_cat);
+	foreach ($post_cat as $cat){
+		if ($cat->parent == $parent) {
+			$cat_out = $cat->cat_name;
+			$cat_link = get_category_link($cat->cat_ID);
+			$output = $output . "<a href = " . $cat_link . ">" . $cat_out . ", </a>";
+		}
+	}
+	echo substr_replace($output, "", -6, 2);
+}

@@ -20,10 +20,10 @@
 						<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 					</div>
 					<div class="catalog-info">
-						<span class="year"><?php the_field('movie-year'); ?></span>
-						<span class="country"><?php the_field('movie-country'); ?></span>
+						<span class="year"><?php the_field('movie-year'); ?>, </span>
+						<span class="country"><?php the_field('movie-country'); ?></span><br>
+						<span class="movie-style"><?php sc_the_category(); ?></span><br>
 						<span class="movie-style"><?php the_tags('',', ',''); ?></span>
-						<br>
 					</div>
 				</div>
 			</div>

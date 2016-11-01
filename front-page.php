@@ -45,9 +45,9 @@
 							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 						</div>
 						<div class="catalog-info">
-							<span class="year"><?php the_field('movie-year'); ?></span>
-							<span class="country"><?php the_field('movie-country'); ?></span>
-							<span class="movie-style"><?php the_category(', '); ?></span>
+							<span class="year"><?php the_field('movie-year'); ?>, </span>
+							<span class="country"><?php the_field('movie-country'); ?></span><br>
+							<span class="movie-style"><?php sc_the_category(); ?></span>
 						</div>
 					</div>
 				</div>
