@@ -379,6 +379,9 @@ img {
   left: 10%;
   transition: 0.5s;
 }
+.no-js .main-menu-toggler {
+  display: none;
+}
 .slider-content {
   min-height: 350px;
   font-size: 0;
@@ -749,6 +752,13 @@ img {
   .menu-top-menu li > .sub-menu a{
     background-color: transparent;
     text-transform: none;
+  }
+  .no-js .menu-top-menu.menu-top-menu--close{
+    height: auto;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .content-title:first-child{
     margin-top: 0;
