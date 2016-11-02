@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru"  class="no-js">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.min.css">
+    <script>
+        document.documentElement.classList.remove('no-js');
+    </script>
 </head>
 
 <body>
@@ -32,7 +35,7 @@
                 <!-- end of Languages -->
                 <!-- Main Navigation -->
                 <nav class="main-nav">
-                    <ul class="menu-top-menu" id="menu-top-menu">
+                    <ul class="menu-top-menu  menu-top-menu--close" id="menu-top-menu">
                         <li>
                             <a href="index.html">Главная</a>
                         </li>
@@ -82,8 +85,8 @@
                         </p>
                     </div>
                 </div>
+                <!--
                 <form action="" class="feedback-form" method="post" name="feedback-form">
-                    <div class="wrap">
                         <p>Обратная связь</p>
                         <div class="feedback-form__item">
                             <input type="text" name="name" placeholder="Введите имя" required autofocus>
@@ -95,8 +98,42 @@
                             <textarea name="message" placeholder="Ваше сообщение" required cols="30" rows="10"></textarea>
                         </div>
                         <input type="submit" value="Отправить">
-                    </div>
                 </form>
+
+                -->
+                <!-- Contact Form -->
+                <div role="form" class="wpcf7  feedback-form" id="wpcf7-f343-o1" lang="ru-RU" dir="ltr">
+                    <div class="screen-reader-response"></div>
+                        <form action="/contacts/?preview_id=158&#038;preview_nonce=60acd33159&#038;preview=true#wpcf7-f343-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+                            <div style="display: none;">
+                                <input type="hidden" name="_wpcf7" value="343" />
+                                <input type="hidden" name="_wpcf7_version" value="4.5.1" />
+                                <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f343-o1" />
+                                <input type="hidden" name="_wpnonce" value="0406f3d4e6" />
+                            </div>
+
+                            <p>
+                                <span class="wpcf7-form-control-wrap your-name">
+                                    <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your name here" />
+                                </span>
+                            </p>
+                            <p>
+                                <span class="wpcf7-form-control-wrap your-email">
+                                    <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your email" />
+                                </span>
+                            </p>
+                            <p>
+                                <span class="wpcf7-form-control-wrap your-message">
+                                    <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your message"></textarea>
+                                </span>
+                            </p>
+                            <p>
+                                <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit" />
+                            </p>
+                        <div class="wpcf7-response-output wpcf7-display-none"></div>
+                    </form>
+                </div>
             </div>
         </section>
     </div>

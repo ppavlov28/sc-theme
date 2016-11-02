@@ -27,8 +27,10 @@ gulp.task("style", function() {
             })
         ]))
         .pipe(gulp.dest("html/css"))
+        .pipe(gulp.dest("css"))
         .pipe(minify())
         .pipe(rename("styles.min.css"))
+        .pipe(gulp.dest("css"))
         .pipe(gulp.dest("html/css"))
         .pipe(server.stream());
 });
