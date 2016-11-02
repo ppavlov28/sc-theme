@@ -1,0 +1,91 @@
+array (size=2)
+  0 =>
+    object(WP_Term)[2832]
+      public 'term_id' => int 6
+      public 'name' => string 'Детские программы' (length=33)
+      public 'slug' => string 'children' (length=8)
+      public 'term_group' => int 0
+      public 'term_taxonomy_id' => int 6
+      public 'taxonomy' => string 'category' (length=8)
+      public 'description' => string '' (length=0)
+      public 'parent' => int 3
+      public 'count' => int 31
+      public 'filter' => string 'raw' (length=3)
+      public 'object_id' => int 286
+      public 'cat_ID' => int 6
+      public 'category_count' => int 31
+      public 'category_description' => string '' (length=0)
+      public 'cat_name' => string 'Детские программы' (length=33)
+      public 'category_nicename' => string 'children' (length=8)
+      public 'category_parent' => int 3
+  1 =>
+    object(WP_Term)[2844]
+      public 'term_id' => int 3
+      public 'name' => string 'Каталог' (length=14)
+      public 'slug' => string 'catalog' (length=7)
+      public 'term_group' => int 0
+      public 'term_taxonomy_id' => int 3
+      public 'taxonomy' => string 'category' (length=8)
+      public 'description' => string '' (length=0)
+      public 'parent' => int 0
+      public 'count' => int 46
+      public 'filter' => string 'raw' (length=3)
+      public 'object_id' => int 286
+      public 'cat_ID' => int 3
+      public 'category_count' => int 46
+      public 'category_description' => string '' (length=0)
+      public 'cat_name' => string 'Каталог' (length=14)
+      public 'category_nicename' => string 'catalog' (length=7)
+      public 'category_parent' => int 0
+
+
+
+
+<ul id="menu-footer-menu" class="menu-bottom-menu"><li id="menu-item-338" class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-category-parent menu-item-338"><a href="http://salmoncontent.com/category/catalog/">Каталог</a></li>
+    <li id="menu-item-339" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-339"><a href="http://salmoncontent.com/category/catalog/tvnovellas/">Теленовеллы</a></li>
+    <li id="menu-item-340" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-340"><a href="http://salmoncontent.com/category/catalog/children/">Детские программы</a></li>
+    <li id="menu-item-341" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-341"><a href="http://salmoncontent.com/category/catalog/detectives/">Детективные сериалы</a></li>
+    <li id="menu-item-342" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-342"><a href="http://salmoncontent.com/category/catalog/sitcoms/">Ситкомы</a></li>
+</ul>
+
+<ul id="menu-footer-menu" class="main-footer__menu">
+    <li id="menu-item-338" class="menu-item menu-item-type-taxonomy menu-item-object-category current-category-ancestor current-category-parent menu-item-338"><a href="http://salmoncontent.com/category/catalog/">Каталог</a></li>
+    <li id="menu-item-339" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-339"><a href="http://salmoncontent.com/category/catalog/tvnovellas/">Теленовеллы</a></li>
+    <li id="menu-item-340" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-340"><a href="http://salmoncontent.com/category/catalog/children/">Детские программы</a></li>
+    <li id="menu-item-341" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-341"><a href="http://salmoncontent.com/category/catalog/detectives/">Детективные сериалы</a></li>
+    <li id="menu-item-342" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-342"><a href="http://salmoncontent.com/category/catalog/sitcoms/">Ситкомы</a></li>
+</ul>
+
+
+<div role="form" class="wpcf7" id="wpcf7-f343-o1" lang="ru-RU" dir="ltr">
+    <div class="screen-reader-response"></div>
+    <form action="/contacts/?preview_id=158&#038;preview_nonce=60acd33159&#038;preview=true#wpcf7-f343-o1" method="post" class="wpcf7-form" novalidate="novalidate">
+        <div style="display: none;">
+            <input type="hidden" name="_wpcf7" value="343" />
+            <input type="hidden" name="_wpcf7_version" value="4.5.1" />
+            <input type="hidden" name="_wpcf7_locale" value="ru_RU" />
+            <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f343-o1" />
+            <input type="hidden" name="_wpnonce" value="0406f3d4e6" />
+        </div>
+
+        <p>
+            <span class="wpcf7-form-control-wrap your-name">
+                <input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Your name here" />
+            </span>
+        </p>
+        <p>
+            <span class="wpcf7-form-control-wrap your-email">
+                <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your email" />
+            </span>
+        </p>
+        <p>
+            <span class="wpcf7-form-control-wrap your-message">
+                <textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Your message"></textarea>
+            </span>
+        </p>
+        <p>
+            <input type="submit" value="Отправить" class="wpcf7-form-control wpcf7-submit" />
+        </p>
+        <div class="wpcf7-response-output wpcf7-display-none"></div>
+    </form>
+</div>
