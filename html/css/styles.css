@@ -426,6 +426,7 @@ img {
 }
 .catalog-item:hover .catalog-img {
   box-shadow: 0 3px 15px rgba(41, 52, 73, 0.4);
+  box-shadow: 0 0 15px rgba(0, 153, 153, 0.8);
 }
 .catalog-item:hover .catalog-title a {
   color: #009999;
@@ -610,10 +611,12 @@ img {
   color: #ffffff;
 }
 .feedback-form {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding: 20px 20px 40px;
 }
 .feedback-form__item {
+  margin-bottom: 20px;
+}
+.feedback-form p {
   margin-bottom: 20px;
 }
 .feedback-form input,
@@ -621,8 +624,28 @@ img {
   width: 100%;
   padding: 10px;
 }
+.feedback-form input::-webkit-input-placeholder,
+.feedback-form textarea::-webkit-input-placeholder {
+  color: rgba(0, 153, 153, 0.5);
+}
+.feedback-form input::-moz-placeholder,
+.feedback-form textarea::-moz-placeholder {
+  color: rgba(0, 153, 153, 0.5);
+}
+.feedback-form input:-ms-input-placeholder,
+.feedback-form textarea:-ms-input-placeholder {
+  color: rgba(0, 153, 153, 0.5);
+}
 .feedback-form input[type="submit"] {
   max-width: 180px;
+  font-weight: bold;
+  outline: none;
+  color: #ffffff;
+  background-color: #006699;
+  border-radius: 5px;
+}
+.feedback-form input[type="submit"]:hover {
+  box-shadow: 0 0 15px rgba(0, 153, 153, 0.9);
 }
 .feedback-form textarea {
   resize: none;
