@@ -123,8 +123,6 @@
         position: static;
         display: block;
         height: auto;
-
-        //outline: 1px solid yellow;
       }
 
       li {
@@ -169,6 +167,18 @@
   }
 }
 
+.no-js {
+  .menu-top-menu.menu-top-menu--close {
+    @media @tablet-width {
+      height: auto;
+      margin-left: -20px;
+      margin-right: -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}
+
 .current-menu-parent {
   .current-menu-item {
     & > a {
@@ -181,9 +191,6 @@
   height: 0;
 }
 
-@media @tablet-width {
-
-}
 
 /*
 .sub-menu.sub-menu2 {

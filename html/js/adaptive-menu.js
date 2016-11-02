@@ -5,8 +5,6 @@
 
     if (!navToggler) { return };
 
-    navToggler.classList.remove('no-js');
-
     var mainNav = document.getElementById('menu-top-menu');
 
     mainNav.classList.add('menu-top-menu--close');

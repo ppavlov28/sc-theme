@@ -1,6 +1,5 @@
 .feedback-form {
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding: 20px 20px 40px;
 
   @media @tablet-big-width {
     width: 50%;
@@ -12,14 +11,28 @@
     margin-bottom: 20px;
   }
 
+  p {
+    margin-bottom: 20px;
+  }
+
   input,
   textarea {
     width: 100%;
     padding: 10px;
+    .placeholder-color(fade(@hover-color, 50%));
   }
 
   input[type="submit"] {
     max-width: 180px;
+    font-weight: bold;
+    outline: none;
+    color: @light-color;
+    background-color: @brand-color;
+    border-radius: 5px;
+
+    &:hover {
+      box-shadow: 0 0 15px fade(@hover-color, 90%);
+    }
   }
 
   textarea {

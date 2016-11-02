@@ -28,6 +28,8 @@
 				</p>
 			</div>
 		</div>
+		<?php echo do_shortcode('[contact-form-7 id="343" title="Contact form 1"]'); ?>
+		<!--
 		<form action="" class="feedback-form" method="post" name="feedback-form">
 			<div class="wrap">
 				<p>Обратная связь</p>
@@ -43,6 +45,7 @@
 				<input type="submit" value="Отправить">
 			</div>
 		</form>
+		-->
 	</div>
 </section>
 
