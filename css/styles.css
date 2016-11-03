@@ -242,6 +242,7 @@ img {
   padding: 0;
   list-style: none;
   overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.6);
   transition: 0.3s height ease-in-out, 0.3s bottom ease-in-out;
   transition-delay: 0.5s;
 }
@@ -258,7 +259,6 @@ img {
   padding-bottom: 9px;
   font-size: 18px;
   text-transform: uppercase;
-  background-color: rgba(51, 51, 51, 0.6);
 }
 .menu-top-menu > .current-menu-item > a {
   text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.8);
@@ -388,6 +388,12 @@ img {
 .slider-content img {
   max-width: 100%;
   height: auto;
+}
+.slider .theme-default .nivo-caption {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .content {
   margin-bottom: 30px;
@@ -699,6 +705,9 @@ img {
 @media only screen and (max-width: 420px){
   body{
     font-size: 14px;
+  }
+  .slider .theme-default .nivo-caption{
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 780px){
