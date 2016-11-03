@@ -212,9 +212,6 @@ img {
   font-size: 0;
   cursor: pointer;
 }
-.menu-top-menu li.menu-item-has-children {
-  padding-bottom: 30px;
-}
 .menu-top-menu li.menu-item-has-children:hover > .sub-menu {
   left: 0;
   bottom: -40px;
