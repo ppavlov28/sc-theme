@@ -164,6 +164,11 @@ img {
   padding-top: 20px;
   color: #ffffff;
   background-color: #244e81;
+  /*
+  .current-category-parent {
+    font-weight: bold;
+  }
+  */
 }
 .main-footer p {
   margin: 0;
@@ -185,6 +190,9 @@ img {
   margin-bottom: 10px;
   font-size: 16px;
 }
+.main-footer__menu li:first-child {
+  font-weight: bold;
+}
 .main-footer__menu a {
   color: #ffffff;
   text-decoration: none;
@@ -195,9 +203,6 @@ img {
 .main-footer .main-footer__info {
   margin-top: 20px;
   font-size: 12px;
-}
-.main-footer .current-category-parent {
-  font-weight: bold;
 }
 .lang-list {
   margin: 0;
