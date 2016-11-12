@@ -11,7 +11,7 @@
 
 <body <?php //body_class(); ?>>
 <div class="wrapper">
-	<div class="content-full">
+	<div class="content-full container">
 	<!-- Main Header -->
 	<header class="header-main  header-main--index  container">
 		<div class="wrap clearfix">
@@ -34,7 +34,7 @@
 			<!-- Main Navigation -->
 			<nav class="main-nav">
 				<?php
-				$walker = new sc_fp2_menu_walker();
+				$walker = new sc_fp_menu_walker();
 				if (has_nav_menu('top')) {
 					wp_nav_menu(
 						array(

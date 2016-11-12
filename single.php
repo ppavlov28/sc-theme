@@ -1,4 +1,4 @@
-<?php get_header(); ?>-
+<?php get_header(); ?>
 
 <section class="main  container clearfix page-catalog">
 	<!-- PageTitle -->

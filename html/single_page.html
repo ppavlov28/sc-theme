@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru"  class="no-js">
 
 <head>
   <meta charset="UTF-8">
@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.min.css">
+  <script>
+    document.documentElement.classList.remove('no-js');
+  </script>
 </head>
 
 <body>
@@ -32,7 +35,7 @@
           <!-- end of Languages -->
           <!-- Main Navigation -->
           <nav class="main-nav">
-            <ul class="menu-top-menu" id="menu-top-menu">
+            <ul class="menu-top-menu  menu-top-menu--close" id="menu-top-menu">
               <li>
                 <a href="index.html">Главная</a>
               </li>
@@ -110,7 +113,26 @@
     <!-- Footer -->
     <footer class="main-footer  container">
       <div class="wrap">
-        <p class="info">&copy; SC-Template</p>
+        <ul class="main-footer__menu">
+          <li class="current-category-parent"><a href="catalog.html">Каталог</a></li>
+          <li><a href="">Теленовеллы</a></li>
+          <li><a href="">Детские программы</a></li>
+          <li><a href="">Детективные сериалы</a></li>
+          <li><a href="">Ситкомы</a></li>
+        </ul>
+        <div class="sale-depart  sale-depart--footer">
+          <div class="wrap">
+            <p>Отдел продаж:</p>
+            <p class="sale-depart__item">
+              <a href="tel:+380995553322">+380 99 555 33 22</a>
+            </p>
+            <p class="sale-depart__item">
+              <a href="mailto:sales@salmoncontent.com">sales@salmoncontent.com</a>
+            </p>
+            <p class="main-footer__info">&copy; 2016 Salmoncontent Все права защищены</p>
+          </div>
+        </div>
+
       </div>
     </footer>
     <!-- end of Footer -->
