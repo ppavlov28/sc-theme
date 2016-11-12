@@ -350,6 +350,7 @@ img {
     position: static;
     display: block;
     height: auto;
+    background-color: transparent;
   }
 }
 .menu-top-menu li > .sub-menu li {
