@@ -13,28 +13,9 @@
 			<!-- end of PageTitle -->
 
 			<!-- Articles -->
-			<div class="welcome">
-				<div class="wrap">
-					<?php the_content(); ?>
-				</div>
-			</div>
-			<div class="clearfix">
-				<div class="sale-depart">
-					<div class="wrap">
-						<p>Отдел продаж:</p>
-						<p class="sale-depart__item">
-							<a href="tel:<? the_field('tel'); ?>"><?php the_field('tel') ?></a>
-						</p>
-						<p class="sale-depart__item">
-							<a href="mailto:<?php the_field('email') ?>"><?php the_field('email') ?></a>
-						</p>
-					</div>
-				</div>
-				<?php //echo do_shortcode('[contact-form-7 id="343" title="Contact form"]'); ?>
-			</div>
+			<?php the_content(); ?>
 
 	<?php endwhile; ?>
-
 
 	<!-- PageTitle
 	<div class="content-title">

@@ -882,11 +882,11 @@ img {
 .sale-depart--footer a:hover {
   color: #ffffff;
 }
-.wpcf7 {
+#wpcf7-f343-p158-o1 {
   padding: 20px 20px 40px;
 }
 @media only screen and (min-width: 780px) {
-  .wpcf7 {
+  #wpcf7-f343-p158-o1 {
     width: 50%;
     float: right;
     padding-top: 40px;
@@ -895,27 +895,27 @@ img {
 .feedback-form__item {
   margin-bottom: 20px;
 }
-.wpcf7 p {
+#wpcf7-f343-p158-o1 p {
   margin-bottom: 20px;
 }
-.wpcf7 input,
-.wpcf7 textarea {
+#wpcf7-f343-p158-o1 input,
+#wpcf7-f343-p158-o1 textarea {
   width: 100%;
   padding: 10px;
 }
-.wpcf7 input::-webkit-input-placeholder,
-.wpcf7 textarea::-webkit-input-placeholder {
+#wpcf7-f343-p158-o1 input::-webkit-input-placeholder,
+#wpcf7-f343-p158-o1 textarea::-webkit-input-placeholder {
   color: rgba(0, 153, 153, 0.5);
 }
-.wpcf7 input::-moz-placeholder,
-.wpcf7 textarea::-moz-placeholder {
+#wpcf7-f343-p158-o1 input::-moz-placeholder,
+#wpcf7-f343-p158-o1 textarea::-moz-placeholder {
   color: rgba(0, 153, 153, 0.5);
 }
-.wpcf7 input:-ms-input-placeholder,
-.wpcf7 textarea:-ms-input-placeholder {
+#wpcf7-f343-p158-o1 input:-ms-input-placeholder,
+#wpcf7-f343-p158-o1 textarea:-ms-input-placeholder {
   color: rgba(0, 153, 153, 0.5);
 }
-.wpcf7 input[type="submit"] {
+#wpcf7-f343-p158-o1 input[type="submit"] {
   max-width: 180px;
   font-weight: bold;
   outline: none;
@@ -923,9 +923,9 @@ img {
   background-color: #006699;
   border-radius: 5px;
 }
-.wpcf7 input[type="submit"]:hover {
+#wpcf7-f343-p158-o1 input[type="submit"]:hover {
   box-shadow: 0 0 15px rgba(0, 153, 153, 0.9);
 }
-.wpcf7 textarea {
+#wpcf7-f343-p158-o1 textarea {
   resize: none;
 }
