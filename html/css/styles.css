@@ -888,11 +888,11 @@ img {
 .sale-depart--footer a:hover {
   color: #ffffff;
 }
-.feedback-form {
+.wpcf7 {
   padding: 20px 20px 40px;
 }
 @media only screen and (min-width: 780px) {
-  .feedback-form {
+  .wpcf7 {
     width: 50%;
     float: right;
     padding-top: 40px;
@@ -901,27 +901,27 @@ img {
 .feedback-form__item {
   margin-bottom: 20px;
 }
-.feedback-form p {
+.wpcf7 p {
   margin-bottom: 20px;
 }
-.feedback-form input,
-.feedback-form textarea {
+.wpcf7 input,
+.wpcf7 textarea {
   width: 100%;
   padding: 10px;
 }
-.feedback-form input::-webkit-input-placeholder,
-.feedback-form textarea::-webkit-input-placeholder {
+.wpcf7 input::-webkit-input-placeholder,
+.wpcf7 textarea::-webkit-input-placeholder {
   color: rgba(0, 153, 153, 0.5);
 }
-.feedback-form input::-moz-placeholder,
-.feedback-form textarea::-moz-placeholder {
+.wpcf7 input::-moz-placeholder,
+.wpcf7 textarea::-moz-placeholder {
   color: rgba(0, 153, 153, 0.5);
 }
-.feedback-form input:-ms-input-placeholder,
-.feedback-form textarea:-ms-input-placeholder {
+.wpcf7 input:-ms-input-placeholder,
+.wpcf7 textarea:-ms-input-placeholder {
   color: rgba(0, 153, 153, 0.5);
 }
-.feedback-form input[type="submit"] {
+.wpcf7 input[type="submit"] {
   max-width: 180px;
   font-weight: bold;
   outline: none;
@@ -929,9 +929,9 @@ img {
   background-color: #006699;
   border-radius: 5px;
 }
-.feedback-form input[type="submit"]:hover {
+.wpcf7 input[type="submit"]:hover {
   box-shadow: 0 0 15px rgba(0, 153, 153, 0.9);
 }
-.feedback-form textarea {
+.wpcf7 textarea {
   resize: none;
 }
