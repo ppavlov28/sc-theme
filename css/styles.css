@@ -621,33 +621,33 @@ img {
 .sale-depart--footer a:hover {
   color: #ffffff;
 }
-.feedback-form {
+#wpcf7-f343-p158-o1 {
   padding: 20px 20px 40px;
 }
-.feedback-form__item {
+#wpcf7-f343-p158-o1__item {
   margin-bottom: 20px;
 }
-.feedback-form p {
+#wpcf7-f343-p158-o1 p {
   margin-bottom: 20px;
 }
-.feedback-form input,
-.feedback-form textarea {
+#wpcf7-f343-p158-o1 input,
+#wpcf7-f343-p158-o1 textarea {
   width: 100%;
   padding: 10px;
 }
-.feedback-form input::-webkit-input-placeholder,
-.feedback-form textarea::-webkit-input-placeholder {
+#wpcf7-f343-p158-o1 input::-webkit-input-placeholder,
+#wpcf7-f343-p158-o1 textarea::-webkit-input-placeholder {
   color: rgba(0, 153, 153, 0.5);
 }
-.feedback-form input::-moz-placeholder,
-.feedback-form textarea::-moz-placeholder {
+#wpcf7-f343-p158-o1 input::-moz-placeholder,
+#wpcf7-f343-p158-o1 textarea::-moz-placeholder {
   color: rgba(0, 153, 153, 0.5);
 }
-.feedback-form input:-ms-input-placeholder,
-.feedback-form textarea:-ms-input-placeholder {
+#wpcf7-f343-p158-o1 input:-ms-input-placeholder,
+#wpcf7-f343-p158-o1 textarea:-ms-input-placeholder {
   color: rgba(0, 153, 153, 0.5);
 }
-.feedback-form input[type="submit"] {
+#wpcf7-f343-p158-o1 input[type="submit"] {
   max-width: 180px;
   font-weight: bold;
   outline: none;
@@ -655,10 +655,10 @@ img {
   background-color: #006699;
   border-radius: 5px;
 }
-.feedback-form input[type="submit"]:hover {
+#wpcf7-f343-p158-o1 input[type="submit"]:hover {
   box-shadow: 0 0 15px rgba(0, 153, 153, 0.9);
 }
-.feedback-form textarea {
+#wpcf7-f343-p158-o1 textarea {
   resize: none;
 }
 @media only screen and (min-width: 520px){
@@ -695,7 +695,7 @@ img {
     padding-bottom: 40px;
     text-align: left;
   }
-  .feedback-form{
+  #wpcf7-f343-p158-o1{
     width: 50%;
     float: right;
     padding-top: 40px;
