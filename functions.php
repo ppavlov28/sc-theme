@@ -152,20 +152,6 @@ function sc_catalog_category(){
  * Построение меню
  */
 
-//class sc_fpm_menu_walker extends Walker_Nav_Menu {
-//	function start_lvl( &$output, $depth = 0, $args = array() ) {
-//		$current_url = (is_ssl()?'https://':'http://').$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
-//		$page_url = (is_ssl()?'https://':'http://').'salmoncontent.com/category/catalog/';
-//		if ($current_url != $page_url){
-//			$indent = str_repeat("\t", $depth);
-//			$output .= "\n$indent<ul class=\"sub-menu\">\n";
-//		} else {
-//			$indent = str_repeat("\t", $depth);
-//			$output .= "\n$indent<ul class=\"sub-menu   sub-menu--fixed\">\n";
-//		}
-//	}
-//}
-
 class sc_fp_menu_walker extends Walker_Nav_Menu {
 	function start_lvl( &$output, $depth = 0, $args = array() ) {
 		if (is_front_page() || is_page('contacts')) {
@@ -196,3 +182,17 @@ function sc_the_category(){
 	}
 	echo substr_replace($output, "", -6, 2);
 }
+
+/*
+ * Регистрация виджета
+ */
+
+register_sidebar(array(
+	'name' => __('Header widgets'),
+	'id' => 'header-widget-area',
+	'description' => __('Виджеты в шапке'),
+	'before_widget' => '',
+	'after_widget' => '',
+	'before_title' => '<h3><a href="#">',
+	'after_title' => '</a></h3>',
+));
